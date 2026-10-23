@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conta | Gestão Financeira NL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=1.4" />
+  </head>
+  <body>
+    <div class="history-toolbar">
+      <button id="undo-button" type="button" class="history-button" aria-label="Desfazer" title="Desfazer" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 10 4 5l5-5"></path>
+          <path d="M4 5h9a7 7 0 1 1 0 14h-2"></path>
+        </svg>
+      </button>
+      <button id="redo-button" type="button" class="history-button" aria-label="Refazer" title="Refazer" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m15 10 5-5-5-5"></path>
+          <path d="M20 5h-9a7 7 0 1 0 0 14h2"></path>
+        </svg>
+      </button>
+    </div>
+
+    <aside class="data-transfer-dock">
+      <div class="data-transfer-toggle" role="group" aria-label="Transferência de dados">
+        <button id="open-finance-chat" type="button" class="history-button" aria-label="Abrir assistente financeiro" title="Assistente financeiro">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 5h14a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H9l-4 4v-4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"></path>
+            <path d="M8 10h8"></path>
+            <path d="M8 13h5"></path>
+          </svg>
+        </button>
+        <button id="annual-report-button" type="button" class="history-button" aria-label="Abrir relatório anual" title="Relatório anual">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M12 10v6"></path>
+            <path d="M12 7h.01"></path>
+          </svg>
+        </button>
+        <button id="export-data-button" type="button" class="history-button history-button--export" aria-label="Exportar dados" title="Exportar dados">
+          <svg class="export-progress-ring" viewBox="0 0 64 64" aria-hidden="true">
+            <circle class="export-progress-ring__track" cx="32" cy="32" r="28"></circle>
+            <circle class="export-progress-ring__value" cx="32" cy="32" r="28"></circle>
+          </svg>
+          <span class="export-reminder-badge" id="export-reminder-badge" aria-hidden="true"></span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v10"></path>
+            <path d="m8 9 4 4 4-4"></path>
+            <path d="M5 15v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3"></path>
+          </svg>
+        </button>
+        <button id="import-data-button" type="button" class="history-button" aria-label="Importar dados" title="Importar dados">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 21V11"></path>
+            <path d="m8 15 4-4 4 4"></path>
+            <path d="M5 9V6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+          </svg>
+        </button>
+        <input id="import-data-file" type="file" accept="application/json,.json" hidden />
+      </div>
+      <p id="data-transfer-feedback" class="data-transfer-feedback hidden" aria-live="polite"></p>
+    </aside>
+
+    <div class="page-shell detail-shell">
+      <a class="back-link" href="./index.html">← Voltar às contas</a>
+
+      <header class="detail-header">
+        <div class="detail-account">
+          <div id="detail-symbol" class="account-symbol-placeholder">--</div>
+          <div>
+            <span class="card-label">Conta bancária</span>
+            <h1 id="detail-bank-name">Conta</h1>
+          </div>
+        </div>
+
+        <div class="detail-balance-block">
+          <span class="card-label">Saldo atual</span>
+          <strong id="detail-balance" class="detail-balance">€ 0,00</strong>
+          <strong id="detail-balance-variation" class="detail-balance-variation">€ 0,00</strong>
+          <span id="detail-balance-variation-hint" class="detail-balance-variation-hint">Sem referência anterior.</span>
+        </div>
+      </header>
+
+      <div class="month-navigation">
+        <div class="month-year-row">
+          <label class="analytics-year-picker year-picker">
+            <span>Ano</span>
+            <select id="year-select" class="analytics-year-select" aria-label="Selecionar ano">
+              <option value="2026">2026</option>
+            </select>
+          </label>
+        </div>
+
+        <section class="month-strip" aria-label="Selecionar mês">
+          <button type="button" class="month-chip" data-month="01">Jan</button>
+          <button type="button" class="month-chip" data-month="02">Fev</button>
+          <button type="button" class="month-chip" data-month="03">Mar</button>
+          <button type="button" class="month-chip" data-month="04">Abr</button>
+          <button type="button" class="month-chip" data-month="05">Mai</button>
+          <button type="button" class="month-chip" data-month="06">Jun</button>
+          <button type="button" class="month-chip" data-month="07">Jul</button>
+          <button type="button" class="month-chip" data-month="08">Ago</button>
+          <button type="button" class="month-chip" data-month="09">Set</button>
+          <button type="button" class="month-chip" data-month="10">Out</button>
+          <button type="button" class="month-chip" data-month="11">Nov</button>
+          <button type="button" class="month-chip" data-month="12">Dez</button>
+        </section>
+      </div>
+
+      <aside class="related-accounts-dock" aria-label="Outras contas">
+        <div class="related-accounts-card">
+          <span class="card-label">Outras contas</span>
+          <div id="related-accounts-list" class="related-accounts-list"></div>
+        </div>
+      </aside>
+
+      <div class="detail-content-fade">
+      <section class="summary-grid">
+        <article class="summary-card summary-card-credits">
+          <span class="card-label">Créditos</span>
+          <strong id="total-credits" class="money-figure">€ 0,00</strong>
+        </article>
+
+        <article class="summary-card summary-card-expenses">
+          <span class="card-label">Despesas</span>
+          <strong id="total-expenses" class="money-figure">€ 0,00</strong>
+        </article>
+
+        <article class="summary-card summary-card-final">
+          <span class="card-label">Saldo final</span>
+          <strong id="statement-final-balance" class="money-figure">€ 0,00</strong>
+        </article>
+      </section>
+
+      <section class="panel account-trend-panel">
+        <div class="analytics-card-head">
+          <span class="card-label">Evolução da conta</span>
+          <strong id="account-trend-year-label">2026</strong>
+        </div>
+        <div id="account-trend-chart" class="chart-surface" aria-label="Gráfico anual da evolução da conta"></div>
+      </section>
+
+      <section class="panel tracking-panel">
+        <div class="movements-topbar">
+          <div class="panel-heading">
+            <p class="section-kicker">Acompanhamento</p>
+            <h2>Despesas recorrentes</h2>
+            <p>Adiciona os movimentos mais recorrentes ao longo do mês.</p>
+          </div>
+
+          <div class="movements-actions">
+            <button
+              id="tracking-menu-toggle"
+              type="button"
+              class="mini-action-button"
+              aria-expanded="false"
+              aria-controls="tracking-menu"
+              aria-label="Abrir menu de despesas recorrentes"
+            >
+              ...
+            </button>
+            <div id="tracking-menu" class="statement-menu hidden">
+              <button id="open-recurring-detection-modal" type="button" class="menu-item menu-item-neutral hidden">
+                <span class="menu-item-icon" aria-hidden="true">🔎</span>
+                <span>Detetar recorrências</span>
+              </button>
+              <button id="open-tracking-panel-modal" type="button" class="menu-item menu-item-neutral">
+                <span class="menu-item-icon" aria-hidden="true">📝</span>
+                <span>Editar</span>
+              </button>
+              <button id="tracking-copy-previous" type="button" class="menu-item menu-item-neutral">
+                <span class="menu-item-icon" aria-hidden="true">📄</span>
+                <span>Copiar do mês anterior</span>
+              </button>
+              <button id="delete-selected-tracking-entry" type="button" class="menu-item">
+                <span class="menu-item-icon" aria-hidden="true">🗑</span>
+                <span>Apagar</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <section id="tracking-forecast" class="tracking-forecast hidden" aria-live="polite">
+          <div class="tracking-forecast-summary">
+            <article class="tracking-forecast-card">
+              <span class="card-label">Saldo disponível</span>
+              <strong id="tracking-forecast-available" class="money-figure">€ 0,00</strong>
+              <span id="tracking-forecast-available-meta" class="tracking-forecast-card-meta hidden"></span>
+            </article>
+            <article class="tracking-forecast-card">
+              <span class="card-label">Recorrentes por sair</span>
+              <strong id="tracking-forecast-pending" class="money-figure">€ 0,00</strong>
+            </article>
+            <article class="tracking-forecast-card">
+              <span class="card-label">Saldo previsto</span>
+              <strong id="tracking-forecast-projected" class="money-figure">€ 0,00</strong>
+            </article>
+          </div>
+          <div class="tracking-forecast-head">
+            <span class="card-label">Em falta este mês</span>
+            <span id="tracking-forecast-meta" class="movement-rules-block-meta">Sem despesas previstas em falta.</span>
+          </div>
+          <div id="tracking-forecast-list" class="tracking-forecast-list"></div>
+          <p id="tracking-forecast-empty" class="movement-rules-empty hidden">Não há despesas recorrentes previstas em falta neste mês.</p>
+        </section>
+
+        <div id="tracking-empty-state" class="empty-state">
+          <strong>Sem despesas recorrentes neste mês.</strong>
+          <p>Adiciona nomes a vigiar para veres logo os totais do mês.</p>
+        </div>
+
+        <div id="tracking-list" class="tracking-list"></div>
+        <button id="tracking-more-indicator" type="button" class="activity-more-indicator tracking-more-indicator hidden" aria-label="Mostrar todas as despesas recorrentes">
+          ...
+        </button>
+        <p id="tracking-feedback" class="statement-feedback"></p>
+      </section>
+
+      <section class="panel financial-panel">
+        <div class="movements-topbar">
+          <div class="panel-heading">
+            <p class="section-kicker">Carteira associada</p>
+            <h2>Carteira associada</h2>
+            <p>Adiciona poupanças, fundos de investimento e PPRs para os somar ao saldo atual desta conta.</p>
+          </div>
+
+          <div class="movements-actions">
+            <button id="financial-product-toggle" type="button" class="mini-action-button" aria-expanded="false" aria-controls="financial-product-menu" aria-label="Abrir menu da carteira associada">
+              ...
+            </button>
+            <div id="financial-product-menu" class="statement-menu hidden">
+              <button id="open-financial-product-modal" type="button" class="menu-item menu-item-neutral">
+                <span class="menu-item-icon" aria-hidden="true">＋</span>
+                <span>Criar novo produto</span>
+              </button>
+              <button id="copy-financial-products" type="button" class="menu-item menu-item-neutral">
+                <span class="menu-item-icon" aria-hidden="true">📄</span>
+                <span>Copiar mês anterior</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div id="financial-products-empty-state" class="empty-state">
+          <strong>Sem produtos adicionados à carteira.</strong>
+          <p>Usa o sinal de mais para criar a primeira linha.</p>
+        </div>
+
+        <div id="financial-products-list" class="financial-products-list" aria-live="polite">
+          <section class="financial-products-group">
+            <div class="financial-products-group-heading">
+              <span class="card-label">Poupanças</span>
+            </div>
+            <div id="financial-products-regular-list" class="financial-products-group-list"></div>
+          </section>
+
+          <div class="financial-divider"></div>
+
+          <section class="financial-products-group">
+            <div class="financial-products-group-heading">
+              <span class="card-label">Fundos de investimento</span>
+            </div>
+            <div id="financial-products-funds-list" class="financial-products-group-list"></div>
+          </section>
+
+          <div class="financial-divider"></div>
+
+          <section class="financial-products-group">
+            <div class="financial-products-group-heading">
+              <span class="card-label">PPRs</span>
+            </div>
+            <div id="financial-products-ppr-list" class="financial-products-group-list"></div>
+          </section>
+        </div>
+
+        <div class="financial-total-row">
+          <span class="card-label">Total financeiro</span>
+          <strong id="financial-products-total" class="money-figure">€ 0,00</strong>
+        </div>
+        <p id="financial-products-feedback" class="statement-feedback"></p>
+      </section>
+
+      <section class="panel movements-panel">
+        <div class="movements-topbar">
+          <div class="panel-heading">
+            <p class="section-kicker">Movimentos</p>
+            <h2>Lista mensal</h2>
+            <p>Os movimentos do mês selecionado aparecem aqui.</p>
+          </div>
+
+          <div class="movements-actions">
+            <div class="movements-menu-wrap">
+              <button id="statement-menu-toggle" type="button" class="mini-action-button" aria-expanded="false" aria-controls="statement-menu">
+                ...
+              </button>
+              <div id="statement-menu" class="statement-menu hidden">
+                <button id="paste-statement-from-clipboard" type="button" class="menu-item menu-item-neutral">
+                  <span class="menu-item-icon" aria-hidden="true">📥</span>
+                  <span>Colar movimentos</span>
+                </button>
+                <button id="open-statement-text" type="button" class="menu-item menu-item-neutral">
+                  <span class="menu-item-icon" aria-hidden="true">📋</span>
+                  <span>Editar movimentos</span>
+                </button>
+                <button id="open-movement-search" type="button" class="menu-item menu-item-neutral">
+                  <span class="menu-item-icon" aria-hidden="true">🔍</span>
+                  <span>Pesquisar movimentos</span>
+                </button>
+                <button id="open-movement-analysis" type="button" class="menu-item menu-item-neutral">
+                  <span class="menu-item-icon" aria-hidden="true">📊</span>
+                  <span>Análise de movimentos</span>
+                </button>
+                <button id="open-monthly-pdf-report" type="button" class="menu-item menu-item-neutral">
+                  <span class="menu-item-icon" aria-hidden="true">🧾</span>
+                  <span>Relatório em PDF</span>
+                </button>
+                <button id="movements-toggle" type="button" class="menu-item menu-item-neutral hidden">
+                  <span class="menu-item-icon" aria-hidden="true">📚</span>
+                  <span>Ver tudo</span>
+                </button>
+                <button id="delete-statement-data" type="button" class="menu-item">
+                  <span class="menu-item-icon" aria-hidden="true">🗑</span>
+                  <span>Apagar extrato mensal</span>
+                </button>
+                <button id="open-statement-help" type="button" class="menu-item menu-item-neutral">
+                  <span class="menu-item-icon" aria-hidden="true">?</span>
+                  <span>Ajuda</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="movements-empty-state" class="empty-state">
+          <strong>Sem movimentos para este mês.</strong>
+          <p>Importa um extrato e escolhe um mês com registos.</p>
+        </div>
+
+        <div id="movements-list" class="movements-list" aria-live="polite"></div>
+        <div id="movements-more-indicator" class="activity-more-indicator hidden" aria-hidden="true">...</div>
+        <p id="statement-feedback" class="statement-feedback">
+          Ainda não existe extrato importado para este mês.
+        </p>
+      </section>
+      </div>
+    </div>
+
+    <div id="statement-text-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="statement-text-title">
+      <div class="modal-backdrop" data-close-statement-text="true"></div>
+      <div class="modal-card">
+        <button id="close-statement-text-modal" type="button" class="modal-close" aria-label="Fechar">
+          ×
+        </button>
+        <div class="panel-heading">
+          <p class="section-kicker">Extrato mensal</p>
+          <h2 id="statement-text-title">Extrato mensal guardado</h2>
+          <p>Podes rever o texto guardado deste mês e copiá-lo integralmente para o clipboard.</p>
+        </div>
+
+        <label class="statement-text-label">
+          Texto do extrato
+          <textarea
+            id="statement-text"
+            class="statement-textarea"
+            placeholder="Ex.: 08/04/2026    08/04/2026    PAG BXVAL- 5504 VIAVERDE    -7,60    347,46"
+          ></textarea>
+        </label>
+
+        <div class="statement-text-actions">
+          <button id="import-text-button" type="button" class="primary-button statement-import-button">
+            Copiar texto
+          </button>
+          <button id="save-statement-text-button" type="button" class="secondary-button statement-import-button">
+            Gravar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="movement-search-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="movement-search-title">
+      <div class="modal-backdrop" data-close-movement-search="true"></div>
+      <div class="modal-card modal-card-wide movement-search-modal-card">
+        <button id="close-movement-search-modal" type="button" class="modal-close" aria-label="Fechar">
+          ×
+        </button>
+        <div class="panel-heading">
+          <p class="section-kicker">Pesquisa geral</p>
+          <h2 id="movement-search-title">Pesquisar movimentos</h2>
+          <p>Procura em todos os extratos guardados desta conta, no mês selecionado ou entre datas.</p>
+        </div>
+
+        <div class="movement-search-controls">
+          <label class="movement-search-field">
+            Palavra a procurar
+            <input id="movement-search-query" type="search" placeholder="Ex.: Paypal, Via Verde, EDP" autocomplete="off" />
+          </label>
+
+          <label class="movement-search-field movement-search-mode-field">
+            Âmbito
+            <select id="movement-search-mode">
+              <option value="all">Tudo</option>
+              <option value="year">Ano corrente</option>
+              <option value="monthly">Mensal</option>
+              <option value="range">Entre datas</option>
+            </select>
+          </label>
+
+          <label class="movement-search-field movement-search-date-field hidden">
+            De
+            <input id="movement-search-start-date" type="date" />
+          </label>
+
+          <label class="movement-search-field movement-search-date-field hidden">
+            Até
+            <input id="movement-search-end-date" type="date" />
+          </label>
+        </div>
+
+        <div class="movement-search-summary">
+          <article class="summary-card movement-search-summary-card">
+            <span class="card-label">Movimentos</span>
+            <strong id="movement-search-count">0</strong>
+          </article>
+          <article class="summary-card movement-search-summary-card">
+            <span class="card-label movement-analysis-column-label-credit">Créditos</span>
+            <strong id="movement-search-credits" class="money-figure">0,00 €</strong>
+          </article>
+          <article class="summary-card movement-search-summary-card">
+            <span class="card-label movement-analysis-column-label-debit">Débitos</span>
+            <strong id="movement-search-debits" class="money-figure">0,00 €</strong>
+          </article>
+          <article class="summary-card movement-search-summary-card">
+            <span class="card-label">Saldo líquido</span>
+            <strong id="movement-search-net" class="money-figure">0,00 €</strong>
+          </article>
+        </div>
+
+        <div id="movement-search-results" class="movement-search-results"></div>
+        <p id="movement-search-empty" class="movement-search-empty">Escreve uma palavra para começar a pesquisa.</p>
+      </div>
+    </div>
+
+    <div id="statement-help-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="statement-help-title">
+      <div class="modal-backdrop" data-close-statement-help="true"></div>
+      <div class="modal-card movement-search-modal-card">
+        <button id="close-statement-help-modal" type="button" class="modal-close" aria-label="Fechar">
+          ×
+        </button>
+        <div class="panel-heading">
+          <p class="section-kicker">Ajuda</p>
+          <h2 id="statement-help-title">Formatos aceites para o extrato</h2>
+          <p>Podes colar o texto do banco em formatos semelhantes aos exemplos abaixo. A app procura datas, descrição, valor e saldo.</p>
+        </div>
+
+        <div class="statement-help-examples">
+          <article class="statement-help-example">
+            <span class="card-label">Formato tabulado</span>
+            <pre>08/04/2026	08/04/2026	PAG BXVAL- 5504 VIAVERDE	-7,60	347,46
+08/04/2026	08/04/2026	DD Prio.E Mobilit PT218856458A63 PT19109102	-21,08	355,06</pre>
+          </article>
+
+          <article class="statement-help-example">
+            <span class="card-label">Formato com milhares</span>
+            <pre>29/01/26	29/01/26	DD PayPal Europe 5VU22252UKL5N LU960000000000	-3,99	1.254,72
+23/01/26	23/01/26	TRANSFERENCIA - VENCIMENTO	1.882,67	2.018,61</pre>
+          </article>
+
+          <article class="statement-help-example">
+            <span class="card-label">Formato com euro e parênteses</span>
+            <pre>23/03/26  23/03/26  LEVANTAMENTO MB CARTAO **** 715*  (20,00 €)  984,29 €
+23/03/26  23/03/26  ORDENADO / PENSAO NB NB18687 VENCIMENTOS  + 2.082,88 €  + 2.128,92 €</pre>
+          </article>
+
+          <article class="statement-help-example">
+            <span class="card-label">Formato com uma só data</span>
+            <pre>05/05/2026	NETFLIX	-12,99	874,31
+06/05/2026	APPLE ICLOUD	-2,99	871,32</pre>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div id="financial-product-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="financial-product-title">
+      <div class="modal-backdrop" data-close-financial-product="true"></div>
+      <div class="modal-card">
+        <button id="close-financial-product-modal" type="button" class="modal-close" aria-label="Fechar">
+          ×
+        </button>
+        <div class="panel-heading">
+          <p class="section-kicker">Novo produto</p>
+          <h2 id="financial-product-title">Adicionar produto à carteira</h2>
+          <p>Indica o nome do produto e o respetivo valor atual.</p>
+        </div>
+
+        <form id="financial-product-form" class="account-form">
+          <input type="hidden" id="financial-product-id" name="financialProductId" />
+
+          <label>
+            Tipo
+            <select id="financial-product-kind" name="financialProductKind">
+              <option value="financial">Poupança</option>
+              <option value="fund">Fundo de investimento</option>
+              <option value="ppr">PPR</option>
+            </select>
+          </label>
+
+          <label>
+            Nome do produto
+            <input
+              type="text"
+              id="financial-product-name"
+              name="financialProductName"
+              placeholder="Ex.: Depósito a prazo"
+              required
+            />
+          </label>
+
+          <label>
+            Valor
+            <input
+              type="text"
+              id="financial-product-value"
+              name="financialProductValue"
+              inputmode="decimal"
+              placeholder="Ex.: 1250,00"
+              required
+            />
+          </label>
+
+          <button type="submit" class="primary-button">
+            <span id="financial-product-submit-label">Guardar produto</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div id="financial-product-chart-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="financial-product-chart-title">
+      <div class="modal-backdrop" data-close-financial-product-chart="true"></div>
+      <div class="modal-card modal-card-wide financial-product-chart-modal-card">
+        <button id="close-financial-product-chart-modal" type="button" class="modal-close" aria-label="Fechar">
+          ×
+        </button>
+        <div class="panel-heading">
+          <p id="financial-product-chart-kicker" class="section-kicker">Evolução da aplicação</p>
+          <h2 id="financial-product-chart-title">Histórico do produto</h2>
+          <p id="financial-product-chart-subtitle">Visualização dos últimos meses com registo desta aplicação.</p>
+        </div>
+
+        <div class="financial-product-chart-summary">
+          <article class="summary-card financial-product-chart-summary-card">
+            <span class="card-label">Último valor</span>
+            <strong id="financial-product-chart-current-value" class="money-figure">0,00 €</strong>
+          </article>
+          <article class="summary-card financial-product-chart-summary-card">
+            <span class="card-label">Variação total</span>
+            <strong id="financial-product-chart-delta-value" class="money-figure">0,00 €</strong>
+          </article>
+          <article class="summary-card financial-product-chart-summary-card">
+            <span class="card-label">Meses com registo</span>
+            <strong id="financial-product-chart-count">0</strong>
+          </article>
+        </div>
+
+        <div id="financial-product-chart-surface" class="chart-surface financial-product-chart-surface"></div>
+      </div>
+    </div>
+
+    <div id="movement-analysis-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="movement-analysis-title">
+      <div class="modal-backdrop" data-close-movement-analysis="true"></div>
+      <div class="modal-card modal-card-wide movement-analysis-modal-card">
+        <button id="close-movement-analysis-modal" type="button" class="modal-close" aria-label="Fechar">
+          ×
+        </button>
+        <div class="panel-heading">
+          <p class="section-kicker">Análise de movimentos</p>
+          <h2 id="movement-analysis-title">Créditos e débitos do mês</h2>
+          <p id="movement-analysis-subtitle">Leitura rápida dos movimentos do mês atual, ordenados do valor mais alto para o mais baixo.</p>
+        </div>
+
+        <div class="movement-analysis-summary">
+          <article class="summary-card summary-card-credits">
+            <span class="card-label">Créditos do mês</span>
+            <strong id="movement-analysis-credits-total" class="money-figure">€ 0,00</strong>
+            <p id="movement-analysis-credits-excluded" class="movement-analysis-summary-detail">Excluídos: € 0,00</p>
+            <p id="movement-analysis-credits-accounting" class="movement-analysis-summary-detail">Contabilizado: € 0,00</p>
+          </article>
+          <article class="summary-card summary-card-expenses">
+            <span class="card-label">Débitos do mês</span>
+            <strong id="movement-analysis-debits-total" class="money-figure">€ 0,00</strong>
+            <p id="movement-analysis-debits-excluded" class="movement-analysis-summary-detail">Excluídos: € 0,00</p>
+            <p id="movement-analysis-debits-accounting" class="movement-analysis-summary-detail">Contabilizado: € 0,00</p>
+          </article>
+        </div>
+
+        <div class="movement-analysis-grid">
+          <section class="movement-analysis-column">
+            <div class="movement-analysis-column-head">
+              <span class="card-label movement-analysis-column-label movement-analysis-column-label-credit">Créditos</span>
+              <strong id="movement-analysis-credits-count">0</strong>
+            </div>
+            <div id="movement-analysis-credits-list" class="movement-analysis-list"></div>
+          </section>
+
+          <section class="movement-analysis-column">
+            <div class="movement-analysis-column-head">
+              <span class="card-label movement-analysis-column-label movement-analysis-column-label-debit">Débitos</span>
+              <strong id="movement-analysis-debits-count">0</strong>
+            </div>
+            <div id="movement-analysis-debits-list" class="movement-analysis-list"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div id="movement-rules-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="movement-rules-title">
+      <div class="modal-backdrop" data-close-movement-rules="true"></div>
+      <div class="modal-card modal-card-wide">
+        <button id="close-movement-rules-modal" type="button" class="modal-close" aria-label="Fechar">
+          ×
+        </button>
+        <div class="panel-heading">
+          <p class="section-kicker">Acompanhamento mensal</p>
+          <h2 id="movement-rules-title">Despesas recorrentes</h2>
+          <p>Define um nome visível e a palavra-chave que a app deve procurar no extrato.</p>
+        </div>
+
+        <form id="movement-rule-form" class="account-form movement-rule-form">
+          <input type="hidden" id="movement-rule-id" name="movementRuleId" />
+
+          <div class="movement-rule-fields">
+            <label>
+              Palavra-chave
+              <input
+                type="text"
+                id="movement-rule-match"
+                name="movementRuleMatch"
+                placeholder="Ex.: EDP"
+                required
+              />
+            </label>
+
+            <label>
+              Nome apresentado
+              <input
+                type="text"
+                id="movement-rule-label"
+                name="movementRuleLabel"
+                placeholder="Ex.: Eletricidade EDP"
+                required
+              />
+            </label>
+
+            <label class="movement-rule-amount-field">
+              Valor exato
+              <input
+                type="text"
+                id="movement-rule-amount-match"
+                name="movementRuleAmountMatch"
+                inputmode="decimal"
+                placeholder="Ex.: 21,00"
+              />
+            </label>
+
+            <label class="movement-rule-checkbox-field">
+              <input
+                type="checkbox"
+                id="movement-rule-exclude-from-pending"
+                name="movementRuleExcludeFromPending"
+              />
+              <span>Excluir de Recorrentes por sair</span>
+            </label>
+
+            <label id="movement-rule-due-day-wrap" class="movement-rule-due-day-field">
+              Dia previsto
+              <input
+                type="number"
+                id="movement-rule-due-day"
+                name="movementRuleDueDay"
+                min="1"
+                max="31"
+                placeholder="Ex.: 5 (vazio = variável)"
+              />
+            </label>
+          </div>
+
+          <div class="movement-rule-form-actions">
+            <button type="submit" class="primary-button">
+              <span id="movement-rule-submit">Guardar entrada</span>
+            </button>
+            <button id="movement-rule-copy-previous" type="button" class="secondary-button">Copiar mês anterior</button>
+          </div>
+        </form>
+
+        <div class="movement-rules-layout">
+          <section class="movement-rules-block">
+            <div class="movement-rules-block-head">
+              <span class="card-label">Movimentos recorrentes</span>
+              <span class="movement-rules-block-meta">Ordenados por repetições neste mês</span>
+            </div>
+            <div id="movement-rule-suggestions" class="movement-rule-suggestions"></div>
+            <p id="movement-rule-suggestions-empty" class="movement-rules-empty">Ainda não há movimentos repetidos suficientes neste mês para sugerir entradas.</p>
+          </section>
+
+          <section id="movement-rules-dropzone" class="movement-rules-block movement-rules-dropzone">
+            <div class="movement-rules-block-head">
+              <span class="card-label">Seleção do mês</span>
+              <span class="movement-rules-block-meta">Arrasta um movimento para esta área</span>
+            </div>
+            <div id="movement-rules-list" class="movement-rules-list"></div>
+            <p id="movement-rules-empty" class="movement-rules-empty">Ainda não existem linhas para este mês.</p>
+          </section>
+        </div>
+
+        <p id="movement-rules-feedback" class="statement-feedback"></p>
+      </div>
+    </div>
+
+    <div id="recurring-detection-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="recurring-detection-title">
+      <div class="modal-backdrop" data-close-recurring-detection="true"></div>
+      <div class="modal-card movement-search-modal-card">
+        <button id="close-recurring-detection-modal" type="button" class="modal-close" aria-label="Fechar">
+          ×
+        </button>
+        <div class="panel-heading">
+          <p class="section-kicker">Leitura automática</p>
+          <h2 id="recurring-detection-title">Detetar recorrências</h2>
+          <p>Analisa os últimos meses e sugere despesas que se repetem, com nome editável antes de adicionares à lista.</p>
+        </div>
+
+        <div class="recurring-detection-controls">
+          <label class="movement-search-field">
+            <span>Meses a analisar</span>
+            <select id="recurring-detection-window">
+              <option value="3">3 meses</option>
+              <option value="6" selected>6 meses</option>
+              <option value="12">12 meses</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="recurring-detection-summary">
+          <article class="movement-search-summary-card">
+            <span class="card-label">Sugestões</span>
+            <strong id="recurring-detection-count">0</strong>
+          </article>
+          <article class="movement-search-summary-card">
+            <span class="card-label">Meses lidos</span>
+            <strong id="recurring-detection-range">0</strong>
+          </article>
+          <article class="movement-search-summary-card">
+            <span class="card-label">Mais frequente</span>
+            <strong id="recurring-detection-top">Sem dados</strong>
+          </article>
+        </div>
+
+        <div id="recurring-detection-list" class="recurring-detection-list"></div>
+        <p id="recurring-detection-empty" class="movement-rules-empty hidden">Ainda não existem movimentos repetidos suficientes para sugerir recorrências nesta janela.</p>
+        <p id="recurring-detection-feedback" class="statement-feedback"></p>
+      </div>
+    </div>
+
+    <div id="annual-report-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="annual-report-title">
+      <div class="modal-backdrop" data-close-annual-report="true"></div>
+      <div class="modal-card modal-card-report">
+        <div class="modal-tools modal-tools-inline">
+          <button id="print-annual-report-button" type="button" class="modal-close modal-action-button" aria-label="Imprimir relatório anual" title="Imprimir relatório anual">
+            🖨
+          </button>
+          <button id="close-annual-report-modal" type="button" class="modal-close" aria-label="Fechar">
+            ×
+          </button>
+        </div>
+        <div class="panel-heading">
+          <p class="section-kicker">Relatório anual</p>
+          <h2 id="annual-report-title">Resumo até ao mês atual</h2>
+          <p id="annual-report-subtitle">Visão acumulada do ano selecionado até ao mês atual.</p>
+        </div>
+
+        <section class="annual-report-metrics">
+          <article class="annual-report-metric annual-report-metric-credit">
+            <span class="card-label">Créditos acumulados</span>
+            <strong id="annual-report-credits" class="money-figure">€ 0,00</strong>
+            <small>Entradas do ano até ao mês escolhido.</small>
+          </article>
+          <article class="annual-report-metric annual-report-metric-expense">
+            <span class="card-label">Débitos acumulados</span>
+            <strong id="annual-report-expenses" class="money-figure">€ 0,00</strong>
+            <small>Saídas do ano até ao mês escolhido.</small>
+          </article>
+          <article class="annual-report-metric">
+            <span class="card-label">Saldo líquido</span>
+            <strong id="annual-report-net" class="money-figure">€ 0,00</strong>
+            <small>Balanço acumulado entre créditos e débitos.</small>
+          </article>
+          <article class="annual-report-metric">
+            <span class="card-label">Despesas recorrentes</span>
+            <strong id="annual-report-recurring" class="money-figure">€ 0,00</strong>
+            <small>Peso acumulado das linhas que estás a vigiar.</small>
+          </article>
+        </section>
+
+        <section class="annual-report-insights">
+          <article class="annual-report-insight">
+            <span class="card-label">Maior despesa acompanhada</span>
+            <strong id="annual-report-top-recurring">Sem dados</strong>
+          </article>
+          <article class="annual-report-insight">
+            <span class="card-label">Peso nos débitos</span>
+            <strong id="annual-report-recurring-share">0%</strong>
+          </article>
+          <article class="annual-report-insight">
+            <span class="card-label">Linhas acompanhadas</span>
+            <strong id="annual-report-recurring-coverage">0</strong>
+          </article>
+        </section>
+
+        <div class="annual-report-layout">
+          <section class="annual-report-block">
+            <div class="movement-rules-block-head">
+              <span class="card-label">Despesas recorrentes selecionadas</span>
+              <span class="movement-rules-block-meta">Inclui todas as despesas escolhidas até ao mês selecionado, mesmo que só apareçam uma vez</span>
+            </div>
+            <div class="annual-report-recurring-head" aria-hidden="true">
+              <span>Despesa</span>
+              <span>Meses</span>
+              <span>Este mês</span>
+              <span>Média</span>
+              <span>Acumulado</span>
+            </div>
+            <div id="annual-report-recurring-list" class="annual-report-recurring-list"></div>
+            <p id="annual-report-recurring-empty" class="movement-rules-empty hidden">Ainda não existem despesas recorrentes acumuladas neste intervalo.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div id="undo-toast" class="undo-toast hidden" aria-live="polite">
+      <span id="undo-toast-message" class="undo-toast-message"></span>
+      <button id="undo-toast-button" type="button" class="undo-toast-button">Desfazer</button>
+    </div>
+    <div id="statement-toast" class="statement-toast hidden" aria-live="polite"></div>
+
+    <div id="finance-chat-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="finance-chat-title">
+      <div class="modal-backdrop" data-close-finance-chat="true"></div>
+      <div class="modal-card modal-card-wide finance-chat-modal-card">
+        <button id="close-finance-chat-modal" type="button" class="modal-close" aria-label="Fechar">
+          ×
+        </button>
+
+        <div class="panel-heading">
+          <p class="section-kicker">Assistente financeiro</p>
+          <h2 id="finance-chat-title">Perguntar aos movimentos</h2>
+          <p>Pergunta por pagamentos, referências ou descrições. Os resultados ficam no teu browser e podes filtrá-los por datas.</p>
+        </div>
+
+        <form id="finance-chat-form" class="finance-chat-form">
+          <label class="movement-search-field finance-chat-question-field">
+            Pergunta
+            <input id="finance-chat-question" type="search" placeholder="Ex.: mostra-me os pagamentos da Vodafone" autocomplete="off" />
+          </label>
+          <button type="submit" class="primary-button">Pesquisar</button>
+        </form>
+
+        <div class="finance-chat-answer" id="finance-chat-answer">
+          Escreve uma pergunta para começar.
+        </div>
+
+        <div class="movement-search-controls finance-chat-filters">
+          <label class="movement-search-field">
+            Âmbito
+            <select id="finance-chat-scope">
+              <option value="all">Tudo</option>
+              <option value="year">Ano corrente</option>
+              <option value="month">Mês corrente</option>
+              <option value="range">Entre datas</option>
+            </select>
+          </label>
+          <label class="movement-search-field">
+            Conta
+            <select id="finance-chat-account">
+              <option value="all">Todas as contas</option>
+            </select>
+          </label>
+          <label class="movement-search-field finance-chat-date-field hidden">
+            Desde
+            <input id="finance-chat-start-date" type="date" />
+          </label>
+          <label class="movement-search-field finance-chat-date-field hidden">
+            Até
+            <input id="finance-chat-end-date" type="date" />
+          </label>
+        </div>
+
+        <div class="movement-search-summary finance-chat-summary">
+          <article class="summary-card movement-search-summary-card">
+            <span class="card-label">Movimentos</span>
+            <strong id="finance-chat-count">0</strong>
+          </article>
+          <article class="summary-card movement-search-summary-card">
+            <span class="card-label">Créditos</span>
+            <strong id="finance-chat-credits" class="money-figure">0,00 €</strong>
+          </article>
+          <article class="summary-card movement-search-summary-card">
+            <span class="card-label">Débitos</span>
+            <strong id="finance-chat-debits" class="money-figure">0,00 €</strong>
+          </article>
+          <article class="summary-card movement-search-summary-card">
+            <span class="card-label">Saldo líquido</span>
+            <strong id="finance-chat-net" class="money-figure">0,00 €</strong>
+          </article>
+        </div>
+
+        <div id="finance-chat-results" class="movement-search-results finance-chat-results"></div>
+        <p id="finance-chat-empty" class="movement-search-empty">Ainda não há resultados.</p>
+      </div>
+    </div>
+
+    <script src="app-version.js?v=1.4"></script>
+    <script src="account.js?v=1.4"></script>
+    <script src="finance-chat.js?v=1.3"></script>
+  </body>
+</html>

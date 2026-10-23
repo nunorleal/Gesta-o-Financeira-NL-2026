@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movimentos Internos | Gestão Financeira NL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell internal-movements-shell">
+      <a class="back-link" href="./index.html">← Voltar às contas</a>
+
+      <header class="panel internal-header">
+        <div class="panel-heading">
+          <p class="section-kicker">Configuração auxiliar</p>
+          <h1>Movimentos Internos (excluídos da contabilidade)</h1>
+          <p>
+            Define expressões que, no futuro, poderão ser excluídas da leitura
+            contabilística principal sem mexer no resto da aplicação.
+          </p>
+        </div>
+
+        <div class="internal-actions">
+          <button id="add-internal-keyword" type="button" class="primary-button">
+            + Adicionar palavra
+          </button>
+        </div>
+      </header>
+
+      <section id="internal-keyword-form-panel" class="panel internal-keyword-form-panel hidden">
+        <div class="panel-heading">
+          <p class="section-kicker">Nova palavra-chave</p>
+          <h2>Adicionar regra manual</h2>
+          <p>Guarda uma expressão para futura exclusão da contabilidade principal.</p>
+        </div>
+
+        <form id="internal-keyword-form" class="internal-keyword-form">
+          <label>
+            Palavra-chave
+            <input
+              id="internal-keyword-input"
+              type="text"
+              name="keyword"
+              placeholder="Ex.: constit"
+              autocomplete="off"
+              required
+            />
+          </label>
+
+          <div class="internal-keyword-form-actions">
+            <button type="submit" class="primary-button">Analisar palavra</button>
+            <button id="cancel-internal-keyword" type="button" class="secondary-button">Cancelar</button>
+          </div>
+        </form>
+
+        <section id="internal-analysis-panel" class="internal-analysis-panel hidden" aria-live="polite">
+          <div class="internal-analysis-head">
+            <div>
+              <span class="card-label">Análise imediata</span>
+              <h3 id="internal-analysis-title">Nova regra</h3>
+              <p id="internal-analysis-subtitle" class="internal-analysis-subtitle"></p>
+            </div>
+          </div>
+
+          <div class="internal-analysis-metrics">
+            <article class="internal-analysis-metric">
+              <span class="card-label">Movimentos encontrados</span>
+              <strong id="internal-analysis-count" class="money-figure">0</strong>
+            </article>
+            <article class="internal-analysis-metric">
+              <span class="card-label">Valor total</span>
+              <strong id="internal-analysis-total" class="money-figure">€ 0,00</strong>
+            </article>
+          </div>
+
+          <p id="internal-analysis-redundancy" class="internal-analysis-redundancy hidden"></p>
+
+          <div class="internal-analysis-examples-wrap">
+            <div class="panel-heading internal-analysis-examples-head">
+              <p class="section-kicker">Exemplos reais afetados</p>
+              <p>Pré-visualização dos movimentos que esta regra iria marcar como internos.</p>
+            </div>
+            <div id="internal-analysis-examples" class="internal-analysis-examples"></div>
+            <button id="internal-analysis-toggle" type="button" class="secondary-button hidden">Ver tudo</button>
+          </div>
+
+          <div class="internal-analysis-actions">
+            <button id="apply-internal-keyword" type="button" class="primary-button">Aplicar regra</button>
+            <button id="dismiss-internal-analysis" type="button" class="secondary-button">Fechar análise</button>
+          </div>
+        </section>
+      </section>
+
+      <main class="internal-movements-grid">
+        <section class="panel internal-panel">
+          <div class="panel-heading">
+            <p class="section-kicker">Ativos</p>
+            <h2>Palavras e expressões em observação</h2>
+            <p>Ativa, desativa ou remove palavras-chave. Tudo fica guardado automaticamente.</p>
+          </div>
+
+          <div id="internal-active-list" class="internal-chip-list" aria-live="polite"></div>
+        </section>
+
+        <section class="panel internal-panel">
+          <div class="panel-heading">
+            <p class="section-kicker">Últimos movimentos afetados</p>
+            <h2 id="internal-affected-title">Movimentos internos já marcados</h2>
+            <p id="internal-affected-subtitle">Aqui aparecem os últimos movimentos que já ficaram excluídos da contabilidade geral.</p>
+          </div>
+
+          <div class="internal-affected-summary">
+            <article class="internal-analysis-metric">
+              <span class="card-label">Movimentos excluídos</span>
+              <strong id="internal-affected-count" class="money-figure">0</strong>
+            </article>
+            <article class="internal-analysis-metric">
+              <span class="card-label">Somatório excluído</span>
+              <strong id="internal-affected-total" class="money-figure">€ 0,00</strong>
+            </article>
+          </div>
+
+          <div id="internal-affected-list" class="internal-affected-list" aria-live="polite"></div>
+        </section>
+      </main>
+
+      <p id="internal-movements-feedback" class="statement-feedback internal-feedback hidden" aria-live="polite"></p>
+    </div>
+
+    <script src="app-version.js?v=1.4"></script>
+    <script src="pin-lock.js"></script>
+    <script src="internal-movements.js"></script>
+  </body>
+</html>

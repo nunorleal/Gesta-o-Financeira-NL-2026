@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestão Financeira NL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="history-toolbar">
+      <button id="undo-button" type="button" class="history-button" aria-label="Desfazer" title="Desfazer" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 10 4 5l5-5"></path>
+          <path d="M4 5h9a7 7 0 1 1 0 14h-2"></path>
+        </svg>
+      </button>
+      <button id="redo-button" type="button" class="history-button" aria-label="Refazer" title="Refazer" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m15 10 5-5-5-5"></path>
+          <path d="M20 5h-9a7 7 0 1 0 0 14h2"></path>
+        </svg>
+      </button>
+    </div>
+
+    <aside class="data-transfer-dock">
+      <div class="data-transfer-toggle" role="group" aria-label="Transferência de dados">
+        <button id="export-data-button" type="button" class="history-button history-button--export" aria-label="Exportar dados" title="Exportar dados">
+          <svg class="export-progress-ring" viewBox="0 0 64 64" aria-hidden="true">
+            <circle class="export-progress-ring__track" cx="32" cy="32" r="28"></circle>
+            <circle class="export-progress-ring__value" cx="32" cy="32" r="28"></circle>
+          </svg>
+          <span class="export-reminder-badge" id="export-reminder-badge" aria-hidden="true"></span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v10"></path>
+            <path d="m8 9 4 4 4-4"></path>
+            <path d="M5 15v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3"></path>
+          </svg>
+        </button>
+        <button id="import-data-button" type="button" class="history-button" aria-label="Importar dados" title="Importar dados">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 21V11"></path>
+            <path d="m8 15 4-4 4 4"></path>
+            <path d="M5 9V6a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+          </svg>
+        </button>
+        <input id="import-data-file" type="file" accept="application/json,.json" hidden />
+      </div>
+      <p id="data-transfer-feedback" class="data-transfer-feedback" aria-live="polite"></p>
+    </aside>
+
+    <div class="page-shell">
+      <header class="topbar">
+        <h1>Gestão Financeira NL</h1>
+        <p class="hero-text">
+          Regista as tuas contas bancárias com o saldo atual e um símbolo
+          visual para cada banco.
+        </p>
+      </header>
+
+      <section class="executive-metrics-panel">
+        <div class="executive-metric-stack">
+          <article class="executive-metric-card executive-metric-card-inline">
+            <span class="card-label">Saldo bancário total</span>
+            <strong id="metric-bank-balance" class="executive-metric-value">€ 0,00</strong>
+          </article>
+          <article class="executive-metric-card executive-metric-card-inline">
+            <span class="card-label">Produtos financeiros</span>
+            <strong id="metric-financial-products" class="executive-metric-value">€ 0,00</strong>
+          </article>
+          <article class="executive-metric-card executive-metric-card-inline">
+            <span class="card-label">PPR</span>
+            <strong id="metric-ppr" class="executive-metric-value">€ 0,00</strong>
+          </article>
+        </div>
+        <article class="executive-metric-card executive-metric-card-variation executive-metric-card-compact">
+          <span class="card-label">Variação vs mês anterior</span>
+          <strong id="metric-month-variation" class="executive-metric-value">€ 0,00</strong>
+          <span id="metric-month-variation-hint" class="executive-metric-hint">Sem referência anterior.</span>
+        </article>
+        <article class="executive-metric-card executive-metric-card-compact">
+          <span class="card-label">Património total</span>
+          <strong id="metric-total-wealth" class="executive-metric-value">€ 0,00</strong>
+        </article>
+      </section>
+
+      <main class="main-grid">
+        <section class="panel panel-list">
+          <div class="panel-topbar">
+            <div class="panel-heading">
+              <p class="section-kicker">Lista principal</p>
+              <h2><span id="account-count" class="account-heading-count">0</span> Contas Associadas</h2>
+              <p>As tuas contas vão aparecer aqui com símbolo, nome e saldo.</p>
+            </div>
+
+            <div class="accounts-topbar-tools">
+              <div class="panel-actions">
+                <button id="accounts-panel-toggle" type="button" class="menu-button accounts-menu-button" aria-expanded="false" aria-controls="accounts-panel-menu" title="Opções das contas">
+                  ...
+                </button>
+                <div id="accounts-panel-menu" class="account-menu hidden">
+                  <button id="change-pin-button" class="menu-item menu-item-neutral" type="button">
+                    <span class="menu-item-icon" aria-hidden="true">🔐</span>
+                    <span>Alterar PIN</span>
+                  </button>
+                  <button id="open-account-modal" class="menu-item menu-item-neutral" type="button">
+                    <span class="menu-item-icon" aria-hidden="true">＋</span>
+                    <span>Adicionar conta</span>
+                  </button>
+                  <button id="open-account-selection-modal" class="menu-item menu-item-neutral" type="button">
+                    <span class="menu-item-icon" aria-hidden="true">☑</span>
+                    <span>Selecionar contas</span>
+                  </button>
+                  <button id="open-internal-movements-page" class="menu-item menu-item-neutral" type="button">
+                    <span class="menu-item-icon" aria-hidden="true">⇄</span>
+                    <span>Movimentos Internos (excluídos da contabilidade)</span>
+                  </button>
+                  <button id="open-all-pdf-reports" class="menu-item menu-item-neutral" type="button">
+                    <span class="menu-item-icon" aria-hidden="true">🧾</span>
+                    <span>Gerar relatórios PDF</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="empty-state" class="empty-state">
+            <strong>Nenhuma conta adicionada ainda.</strong>
+            <p>Clica em “Adicionar conta” para começar.</p>
+          </div>
+
+          <div id="accounts-list" class="accounts-list" aria-live="polite"></div>
+
+          <div class="total-balance-card">
+            <span class="card-label">Sumatório</span>
+            <h3>Saldo total das contas</h3>
+            <strong id="total-balance">€ 0,00</strong>
+          </div>
+
+          <section class="analytics-panel">
+            <div class="analytics-topbar">
+              <div class="panel-heading">
+                <p class="section-kicker">Evolução anual</p>
+                <h2>Visão global das contas</h2>
+                <p>Acompanha o comportamento do saldo, dos movimentos e das aplicações ao longo do ano.</p>
+              </div>
+
+              <label class="analytics-year-picker">
+                <span class="card-label">Ano</span>
+                <select id="analytics-year-select" class="analytics-year-select" aria-label="Selecionar ano dos gráficos"></select>
+              </label>
+            </div>
+
+            <div class="analytics-grid">
+              <article class="analytics-card">
+                <div class="analytics-card-head">
+                  <span class="card-label">Saldo global</span>
+                  <strong id="analytics-current-year">2026</strong>
+                </div>
+                <div id="balance-trend-chart" class="chart-surface" aria-label="Gráfico do saldo global por mês"></div>
+              </article>
+
+              <article class="analytics-card">
+                <div class="analytics-card-head">
+                  <span class="card-label">Créditos e despesas</span>
+                  <strong>Anual</strong>
+                </div>
+                <div id="flow-trend-chart" class="chart-surface" aria-label="Gráfico anual de créditos e despesas"></div>
+              </article>
+
+              <article class="analytics-card">
+                <div class="analytics-card-head">
+                  <span class="card-label">Produtos financeiros</span>
+                  <strong>Anual</strong>
+                </div>
+                <div id="financial-products-trend-chart" class="chart-surface" aria-label="Gráfico dos produtos financeiros por mês"></div>
+              </article>
+
+              <article class="analytics-card">
+                <div class="analytics-card-head">
+                  <span class="card-label">PPR</span>
+                  <strong>Anual</strong>
+                </div>
+                <div id="ppr-trend-chart" class="chart-surface" aria-label="Gráfico dos PPR por mês"></div>
+              </article>
+            </div>
+          </section>
+
+          <section class="panel activity-panel">
+            <div class="panel-topbar">
+              <div class="panel-heading">
+                <p class="section-kicker">Histórico</p>
+                <h2>Atividade recente</h2>
+                <p>Consulta as últimas alterações feitas nas contas, extratos e produtos financeiros.</p>
+              </div>
+
+              <div class="panel-actions">
+                <button id="activity-toggle" type="button" class="secondary-button hidden">
+                  Ver tudo
+                </button>
+              </div>
+            </div>
+
+            <div id="activity-empty-state" class="empty-state hidden">
+              <strong>Ainda não existe atividade registada.</strong>
+              <p>As ações mais importantes da app vão começar a aparecer aqui automaticamente.</p>
+            </div>
+
+            <div id="activity-list" class="activity-list" aria-live="polite"></div>
+            <div id="activity-more-indicator" class="activity-more-indicator hidden" aria-hidden="true">...</div>
+          </section>
+        </section>
+      </main>
+
+      <aside class="recycle-dock">
+        <button id="toggle-recycle" type="button" class="recycle-toggle">
+          <span class="recycle-icon">🗑</span>
+          <span>Reciclagem</span>
+          <strong id="recycle-count">0</strong>
+        </button>
+
+        <section id="recycle-panel" class="recycle-panel hidden">
+          <div class="panel-heading">
+            <p class="section-kicker">Reciclagem</p>
+            <h2>Contas eliminadas</h2>
+            <p>Recupera rapidamente uma conta apagada por engano.</p>
+          </div>
+
+          <div id="recycle-empty-state" class="empty-state recycle-empty-state">
+            <strong>A reciclagem está vazia.</strong>
+            <p>As contas eliminadas aparecem aqui de forma discreta.</p>
+          </div>
+
+          <div id="recycle-list" class="recycle-list" aria-live="polite"></div>
+        </section>
+      </aside>
+    </div>
+
+    <div
+      id="account-modal"
+      class="modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+      <div class="modal-backdrop" data-close-modal="true"></div>
+      <div class="modal-card">
+        <button
+          id="close-account-modal"
+          type="button"
+          class="modal-close"
+          aria-label="Fechar"
+        >
+          ×
+        </button>
+
+        <div class="panel-heading">
+          <p class="section-kicker">Nova conta</p>
+          <h2 id="modal-title">Adicionar conta bancária</h2>
+          <p>
+            Introduz o nome do banco e, se quiseres, escolhe uma imagem como
+            símbolo.
+          </p>
+        </div>
+
+        <form id="account-form" class="account-form">
+          <input type="hidden" name="accountId" />
+
+          <label>
+            Nome do banco
+            <input
+              type="text"
+              name="bankName"
+              placeholder="Ex.: ActivoBank"
+              required
+            />
+          </label>
+
+          <label class="file-field">
+            Símbolo do banco
+            <input type="file" name="symbol" accept="image/*" />
+          </label>
+
+          <button type="submit" class="primary-button">
+            <span id="submit-button-label">Guardar conta</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div
+      id="account-selection-modal"
+      class="modal hidden"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="account-selection-title"
+    >
+      <div class="modal-backdrop" data-close-account-selection="true"></div>
+      <div class="modal-card">
+        <button
+          id="close-account-selection-modal"
+          type="button"
+          class="modal-close"
+          aria-label="Fechar"
+        >
+          ×
+        </button>
+
+        <div class="panel-heading">
+          <p class="section-kicker">Somatórios globais</p>
+          <h2 id="account-selection-title">Selecionar contas</h2>
+          <p>
+            Marca apenas as contas que queres incluir no cabeçalho, sumatórios
+            e gráficos globais.
+          </p>
+        </div>
+
+        <div id="account-selection-list" class="account-selection-list"></div>
+        <p id="account-selection-feedback" class="statement-feedback"></p>
+      </div>
+    </div>
+
+    <div id="undo-toast" class="undo-toast hidden" aria-live="polite">
+      <span id="undo-toast-message" class="undo-toast-message"></span>
+      <button id="undo-toast-button" type="button" class="undo-toast-button">Desfazer</button>
+    </div>
+
+    <script src="pin-lock.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

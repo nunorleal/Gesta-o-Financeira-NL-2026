@@ -1,0 +1,3925 @@
+{
+  "exportedAt": "2026-04-20T08:04:31.034Z",
+  "version": 1,
+  "accounts": [
+    {
+      "id": "d9f9d974-0b52-40d7-b978-a2ba8c2c5b34",
+      "bankName": "ActivoBank",
+      "balance": 238.75,
+      "symbol": "data:image/jpeg;base64,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",
+      "financialProductsByPeriod": {
+        "2026-04": [
+          {
+            "id": "cf2b1314-89ab-4bf9-a614-2b1905a05c4b",
+            "name": "Poupança - Cofre - 20/02/2026\t\t\t\t \t\t\t\t\t\t\t\t\t\t \t\t\t\t\t\t\t\t\t\tPOUPANÇA - COFRE - 20/02/2026",
+            "value": 10600,
+            "kind": "financial"
+          },
+          {
+            "id": "45f46495-dc59-432d-a93c-be6b6d7832b2",
+            "name": "Poupança Novo AB - 10/05/2026",
+            "value": 22000,
+            "kind": "financial"
+          },
+          {
+            "id": "a5af177d-7b63-4a5e-8b8f-f4996fbffc3d",
+            "name": "Poupança ordenado - 30 dias - 21/01/2026",
+            "value": 1000,
+            "kind": "financial"
+          },
+          {
+            "id": "77e4c8e6-23ce-4624-be5f-68586892cc7e",
+            "name": "PPR - Activo",
+            "value": 1748.61,
+            "kind": "ppr"
+          }
+        ],
+        "2026-05": [],
+        "2026-01": [
+          {
+            "id": "9f486e77-d5d7-46dd-baac-69ea1cf5cfa8",
+            "kind": "financial",
+            "name": "Poupança - Cofre - 20/02/2026",
+            "value": 10600
+          },
+          {
+            "id": "86654ae2-d54e-4d04-a78a-5a53570850b5",
+            "kind": "financial",
+            "name": "Poupança Novo AB - 10/05/2026",
+            "value": 22000
+          },
+          {
+            "id": "0322517b-b000-4ef3-9a14-c09e3572cf9f",
+            "kind": "financial",
+            "name": "Poupança ordenado - 30 dias - 21/01/2026",
+            "value": 1000
+          },
+          {
+            "id": "4f185a8f-57d6-4b95-b54f-ec4e2edcd23a",
+            "kind": "ppr",
+            "name": "PPR - Activo",
+            "value": 1743.83
+          }
+        ],
+        "2026-02": [
+          {
+            "id": "38ccf6b7-b90f-44f3-9208-2a5af15e7176",
+            "kind": "financial",
+            "name": "Poupança - Cofre - 20/02/2026",
+            "value": 10600
+          },
+          {
+            "id": "53484dc0-8708-4ef1-8d18-4a96d025d3cd",
+            "kind": "financial",
+            "name": "Poupança Novo AB - 10/05/2026",
+            "value": 22000
+          },
+          {
+            "id": "8c21d5bd-4470-42c8-843f-16ad7b08b03e",
+            "kind": "financial",
+            "name": "Poupança ordenado - 30 dias - 21/01/2026",
+            "value": 1000
+          },
+          {
+            "id": "0c892243-f380-4ca4-8885-f02724407d12",
+            "kind": "ppr",
+            "name": "PPR - Activo",
+            "value": 1743.83
+          }
+        ],
+        "2026-03": [
+          {
+            "id": "9c1a7d47-0e14-4a7a-9842-7cbecb2a9048",
+            "kind": "financial",
+            "name": "Poupança - Cofre - 20/02/2026",
+            "value": 10600
+          },
+          {
+            "id": "3a7d719a-180f-469c-a37e-56f5a512e287",
+            "kind": "financial",
+            "name": "Poupança Novo AB - 10/05/2026",
+            "value": 22000
+          },
+          {
+            "id": "cbe0c702-c25c-4304-8258-0689157b1085",
+            "kind": "financial",
+            "name": "Poupança ordenado - 30 dias - 21/01/2026",
+            "value": 1000
+          },
+          {
+            "id": "a145acaa-2d55-469e-a71c-73503897d4eb",
+            "kind": "ppr",
+            "name": "PPR - Activo",
+            "value": 1743.83
+          }
+        ]
+      },
+      "movementRules": [],
+      "movementRulesByPeriod": {
+        "2026-04": [
+          {
+            "id": "73b375fc-2815-4cca-be17-d67dd525b3e0",
+            "matchText": "viaverde",
+            "label": "Via Verde",
+            "normalizedMatchText": "viaverde"
+          },
+          {
+            "id": "55df75f4-c916-4a7f-bd9e-972441997978",
+            "matchText": "PAypal",
+            "label": "PayPal",
+            "normalizedMatchText": "paypal"
+          },
+          {
+            "id": "ccd4486b-7bcb-4b87-ad1a-2865947539bd",
+            "matchText": "BMW",
+            "label": "BMW - Prestação Mota",
+            "normalizedMatchText": "bmw"
+          },
+          {
+            "id": "1e06870a-41e7-4030-bf54-74330218748f",
+            "matchText": "Prio",
+            "label": "Prio - Mobilidade Elétrica",
+            "normalizedMatchText": "prio"
+          },
+          {
+            "id": "3fe94beb-86b8-4a2e-9e31-fb8517bcf6c2",
+            "matchText": "Vodafone",
+            "label": "Vodafone",
+            "normalizedMatchText": "vodafone"
+          },
+          {
+            "id": "62345b2a-be69-42c4-ab86-e1fd43083008",
+            "matchText": "vis pagamento",
+            "label": "Cartão de Crédito",
+            "normalizedMatchText": "vis pagamento"
+          }
+        ],
+        "2026-05": [],
+        "2026-01": [
+          {
+            "id": "4580b356-0895-4653-860c-c99be68ebf09",
+            "matchText": "viaverde",
+            "label": "Via Verde",
+            "normalizedMatchText": "viaverde"
+          },
+          {
+            "id": "59915ab0-0175-4a89-a8a9-80b95e1f50f5",
+            "matchText": "PAypal",
+            "label": "PayPal",
+            "normalizedMatchText": "paypal"
+          },
+          {
+            "id": "7bc868f7-abbe-45a5-af3f-f0ed13818245",
+            "matchText": "BMW",
+            "label": "BMW - Prestação Mota",
+            "normalizedMatchText": "bmw"
+          },
+          {
+            "id": "79be4f3c-2f69-430c-8608-d93281ad4e5a",
+            "matchText": "Prio",
+            "label": "Prio - Mobilidade Elétrica",
+            "normalizedMatchText": "prio"
+          },
+          {
+            "id": "b80f4a77-eba7-41df-92b1-c153428539df",
+            "matchText": "Vodafone",
+            "label": "Vodafone",
+            "normalizedMatchText": "vodafone"
+          },
+          {
+            "id": "9405edef-b287-4ffa-8fb8-36f1619e322a",
+            "matchText": "vis pagamento",
+            "label": "Cartão de Crédito",
+            "normalizedMatchText": "vis pagamento"
+          }
+        ],
+        "2026-02": [
+          {
+            "id": "fb5503f9-c82d-4b0a-98da-1083699b4943",
+            "matchText": "viaverde",
+            "label": "Via Verde",
+            "normalizedMatchText": "viaverde"
+          },
+          {
+            "id": "2718d8c4-15a1-4114-bff0-8cf2e87c8ee0",
+            "matchText": "PAypal",
+            "label": "PayPal",
+            "normalizedMatchText": "paypal"
+          },
+          {
+            "id": "c933fa42-f9c2-4316-b7c6-e2c25a5b5e2b",
+            "matchText": "BMW",
+            "label": "BMW - Prestação Mota",
+            "normalizedMatchText": "bmw"
+          },
+          {
+            "id": "e88431b1-e557-4c3f-b383-0ea8f8c88c6c",
+            "matchText": "Prio",
+            "label": "Prio - Mobilidade Elétrica",
+            "normalizedMatchText": "prio"
+          },
+          {
+            "id": "a96cef68-87a5-4f3a-a3c3-010cdb6e3228",
+            "matchText": "Vodafone",
+            "label": "Vodafone",
+            "normalizedMatchText": "vodafone"
+          },
+          {
+            "id": "ecea79b0-18cd-4910-a7ee-f3bc98dcbd83",
+            "matchText": "vis pagamento",
+            "label": "Cartão de Crédito",
+            "normalizedMatchText": "vis pagamento"
+          }
+        ],
+        "2026-03": [
+          {
+            "id": "99e69b9b-8420-4032-b590-a586883e7290",
+            "matchText": "viaverde",
+            "label": "Via Verde",
+            "normalizedMatchText": "viaverde"
+          },
+          {
+            "id": "edb201ab-2168-4a64-b98b-ed57d097e058",
+            "matchText": "PAypal",
+            "label": "PayPal",
+            "normalizedMatchText": "paypal"
+          },
+          {
+            "id": "0e67bc22-2d57-42b5-bd46-0f75ede5d223",
+            "matchText": "BMW",
+            "label": "BMW - Prestação Mota",
+            "normalizedMatchText": "bmw"
+          },
+          {
+            "id": "84d64958-be28-4ad6-acc9-9c404579e9b1",
+            "matchText": "Prio",
+            "label": "Prio - Mobilidade Elétrica",
+            "normalizedMatchText": "prio"
+          },
+          {
+            "id": "6efc0f93-fa10-444d-b32e-29c09caff08a",
+            "matchText": "Vodafone",
+            "label": "Vodafone",
+            "normalizedMatchText": "vodafone"
+          },
+          {
+            "id": "f9bbfea8-55c8-4b31-a783-ca59aaf89075",
+            "matchText": "vis pagamento",
+            "label": "Cartão de Crédito",
+            "normalizedMatchText": "vis pagamento"
+          }
+        ]
+      },
+      "includeInTotals": true
+    },
+    {
+      "id": "c76ff9f9-9209-4a7e-836c-dd7260c777fd",
+      "bankName": "Novo Banco",
+      "balance": 100.49,
+      "symbol": "data:image/jpeg;base64,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",
+      "financialProductsByPeriod": {
+        "2026-01": [
+          {
+            "id": "e8d7a20e-0069-48e4-addd-cf4c0f1e9179",
+            "kind": "financial",
+            "name": "Dossier de Fundos",
+            "value": 62646.16
+          },
+          {
+            "id": "a739a4a3-9a2e-46b8-ae6f-4e60904bed2e",
+            "kind": "financial",
+            "name": "DP - Online",
+            "value": 510
+          },
+          {
+            "id": "4129a149-241b-4fa7-b102-2f1e7e9649bf",
+            "kind": "financial",
+            "name": "Poupança programada 3 anos",
+            "value": 1140.12
+          },
+          {
+            "id": "26893111-7ca5-417f-956b-140a9b55f5d7",
+            "kind": "ppr",
+            "name": "NB PPR SUPER POUPANCA 2ªS - Joana Monteiro",
+            "value": 359.72
+          },
+          {
+            "id": "9f5d7551-9079-4372-a041-bc83568b2e68",
+            "kind": "ppr",
+            "name": "PPR POUPANÇA ATIV",
+            "value": 1769.28
+          },
+          {
+            "id": "108b8d4f-80fb-41de-a7bf-13adf3ac417f",
+            "kind": "ppr",
+            "name": "NB SUPER MEALHEIRO PPR - Nuno Leal",
+            "value": 322.34
+          }
+        ],
+        "2026-02": [
+          {
+            "id": "4ea060b4-51db-4fad-b3bf-e5e686bb6b33",
+            "kind": "financial",
+            "name": "Dossier de Fundos",
+            "value": 61783.79
+          },
+          {
+            "id": "8bbaa182-5153-4203-a1ee-d22fbb753314",
+            "kind": "financial",
+            "name": "DP - Online",
+            "value": 510
+          },
+          {
+            "id": "3efd930d-2a9f-4f02-99bd-43f304e2894b",
+            "kind": "financial",
+            "name": "Poupança programada 3 anos",
+            "value": 905.12
+          },
+          {
+            "id": "3a6c6207-7db4-47b6-834a-1522645fe5d5",
+            "kind": "ppr",
+            "name": "NB PPR SUPER POUPANCA 2ªS - Joana Monteiro",
+            "value": 360.71
+          },
+          {
+            "id": "a1c7e06e-b3c7-4ccf-a0b6-d0c54e8a7791",
+            "kind": "ppr",
+            "name": "PPR POUPANÇA ATIV",
+            "value": 1768.35
+          },
+          {
+            "id": "bb91dc14-d9a2-499b-91db-e2eaca1e45d2",
+            "kind": "ppr",
+            "name": "NB SUPER MEALHEIRO PPR - Nuno Leal",
+            "value": 322.68
+          }
+        ],
+        "2026-03": [
+          {
+            "id": "70f7408e-0bfd-4223-b876-5acb86c311a4",
+            "kind": "financial",
+            "name": "Dossier de Fundos",
+            "value": 62099.04
+          },
+          {
+            "id": "0d5c1c4a-62dd-47ed-b795-a51e9b6b84b9",
+            "kind": "financial",
+            "name": "DP - Online",
+            "value": 510
+          },
+          {
+            "id": "323c7dcc-77ed-434f-a523-4e8c2a8b2866",
+            "kind": "financial",
+            "name": "Poupança programada 3 anos",
+            "value": 955.12
+          },
+          {
+            "id": "a5a0c862-01c7-4ac4-a593-2387919f338c",
+            "kind": "ppr",
+            "name": "NB PPR SUPER POUPANCA 2ªS - Joana Monteiro",
+            "value": 361.61
+          },
+          {
+            "id": "5abe25d6-c418-49f3-964a-82058be6b992",
+            "kind": "ppr",
+            "name": "PPR POUPANÇA ATIV",
+            "value": 1755.91
+          },
+          {
+            "id": "8151559e-de28-4b64-b2eb-17d2e272f34b",
+            "kind": "ppr",
+            "name": "NB SUPER MEALHEIRO PPR - Nuno Leal",
+            "value": 322.99
+          }
+        ],
+        "2026-04": [
+          {
+            "id": "14e06993-bfe6-4c1c-8113-af97fa098864",
+            "kind": "financial",
+            "name": "Dossier de Fundos",
+            "value": 62151.25
+          },
+          {
+            "id": "18093f0f-a696-4fd2-998a-6f9339ea5f91",
+            "kind": "financial",
+            "name": "DP  Online 3 meses",
+            "value": 1000
+          },
+          {
+            "id": "2145d4f9-3f89-4f4a-9daf-6dbe6e82649c",
+            "kind": "financial",
+            "name": "Poupança programada 3 anos",
+            "value": 500.12
+          },
+          {
+            "id": "24078a7a-818e-4d97-8a42-c2a8e2b973c4",
+            "kind": "ppr",
+            "name": "NB PPR SUPER POUPANCA 2ªS - Joana Monteiro",
+            "value": 362.28
+          },
+          {
+            "id": "e0edf31d-3603-4e44-a60d-a4995dd9f3e9",
+            "kind": "ppr",
+            "name": "PPR POUPANÇA ATIV",
+            "value": 1767.6
+          },
+          {
+            "id": "f3b1f162-a3d2-4703-ad19-6c6de6c14778",
+            "kind": "ppr",
+            "name": "NB SUPER MEALHEIRO PPR - Nuno Leal",
+            "value": 323.22
+          }
+        ]
+      },
+      "movementRulesByPeriod": {
+        "2026-04": [
+          {
+            "id": "dfbe69ae-bb57-4941-9312-8e329267c429",
+            "matchText": "COBRANCA SDD EDP COMERCIAL COMER ADC 16010014770968",
+            "label": "EDP",
+            "normalizedMatchText": "cobranca sdd edp comercial comer adc 16010014770968"
+          },
+          {
+            "id": "279c8469-8387-4a5f-b904-9a59d4a57a70",
+            "matchText": "COBRANCA SDD AGUAS DA FIGUEIRA ADC 99197803421",
+            "label": "Água",
+            "normalizedMatchText": "cobranca sdd aguas da figueira adc 99197803421"
+          },
+          {
+            "id": "4a385972-4c39-4501-974a-9d37dccf93a0",
+            "matchText": "PAGAMENTO PRESTACAO CH Nº 4 PROCESSO 0530000789",
+            "label": "Prestação Casa",
+            "normalizedMatchText": "pagamento prestacao ch nº 4 processo 0530000789"
+          },
+          {
+            "id": "87233d2e-338e-4e7b-a851-044e7d4d1d3f",
+            "matchText": "PAGAMENTO PRESTACAO CH Nº 157 PROCESSO 0288000360",
+            "label": "Prestação Casa Alhadas",
+            "normalizedMatchText": "pagamento prestacao ch nº 157 processo 0288000360"
+          },
+          {
+            "id": "9d362b00-0e33-41a2-bcdc-cabbb45371ff",
+            "matchText": "PAG. PRESTACAO CRD PESSOAL Nº 0530004347 20260123",
+            "label": "Prestação Cozinha",
+            "normalizedMatchText": "pag. prestacao crd pessoal nº 0530004347 20260123"
+          }
+        ],
+        "2026-01": [
+          {
+            "id": "791b91e9-3d55-4686-938c-ceee0d28afeb",
+            "matchText": "COBRANCA SDD EDP COMERCIAL COMER ADC 16010014770968",
+            "label": "EDP",
+            "normalizedMatchText": "cobranca sdd edp comercial comer adc 16010014770968"
+          },
+          {
+            "id": "739ef879-332e-453f-bc55-f2158e15c3ea",
+            "matchText": "COBRANCA SDD AGUAS DA FIGUEIRA ADC 99197803421",
+            "label": "Água",
+            "normalizedMatchText": "cobranca sdd aguas da figueira adc 99197803421"
+          },
+          {
+            "id": "ddd5f8e9-4900-4699-9d4d-5dbfc2148b70",
+            "matchText": "PAGAMENTO PRESTACAO CH Nº 4 PROCESSO 0530000789",
+            "label": "Prestação Casa",
+            "normalizedMatchText": "pagamento prestacao ch nº 4 processo 0530000789"
+          },
+          {
+            "id": "0c1acd77-1a2a-4896-ac5a-875db2c54f1a",
+            "matchText": "PAGAMENTO PRESTACAO CH Nº 157 PROCESSO 0288000360",
+            "label": "Prestação Casa Alhadas",
+            "normalizedMatchText": "pagamento prestacao ch nº 157 processo 0288000360"
+          },
+          {
+            "id": "cd8226f0-cd47-4ae6-a393-4fb239b45dd4",
+            "matchText": "PAG. PRESTACAO CRD PESSOAL Nº 0530004347 20260123",
+            "label": "Prestação Cozinha",
+            "normalizedMatchText": "pag. prestacao crd pessoal nº 0530004347 20260123"
+          }
+        ],
+        "2026-02": [
+          {
+            "id": "b50ecc19-51b9-4064-aac0-6a85594b56c8",
+            "matchText": "COBRANCA SDD EDP COMERCIAL COMER ADC 16010014770968",
+            "label": "EDP",
+            "normalizedMatchText": "cobranca sdd edp comercial comer adc 16010014770968"
+          },
+          {
+            "id": "1eff91d1-86c1-4f92-8ef6-3bd65369fc37",
+            "matchText": "COBRANCA SDD AGUAS DA FIGUEIRA ADC 99197803421",
+            "label": "Água",
+            "normalizedMatchText": "cobranca sdd aguas da figueira adc 99197803421"
+          },
+          {
+            "id": "6cb41538-2044-4abb-ba4a-d79dbcb1d3fb",
+            "matchText": "PAGAMENTO PRESTACAO CH Nº 4 PROCESSO 0530000789",
+            "label": "Prestação Casa",
+            "normalizedMatchText": "pagamento prestacao ch nº 4 processo 0530000789"
+          },
+          {
+            "id": "dcccc237-2105-421f-9e4e-30ed5b3f14c5",
+            "matchText": "PAGAMENTO PRESTACAO CH Nº 157 PROCESSO 0288000360",
+            "label": "Prestação Casa Alhadas",
+            "normalizedMatchText": "pagamento prestacao ch nº 157 processo 0288000360"
+          },
+          {
+            "id": "75ff0848-0247-48c1-94aa-b16acee0d878",
+            "matchText": "PAG. PRESTACAO CRD PESSOAL Nº 0530004347 20260123",
+            "label": "Prestação Cozinha",
+            "normalizedMatchText": "pag. prestacao crd pessoal nº 0530004347 20260123"
+          }
+        ],
+        "2026-03": [
+          {
+            "id": "5de6d318-dbdd-4a94-8534-3bb7ce019a50",
+            "matchText": "COBRANCA SDD EDP COMERCIAL COMER ADC 16010014770968",
+            "label": "EDP",
+            "normalizedMatchText": "cobranca sdd edp comercial comer adc 16010014770968"
+          },
+          {
+            "id": "77b6d9d6-4ba4-4c00-ba7e-6fc8a35cb919",
+            "matchText": "COBRANCA SDD AGUAS DA FIGUEIRA ADC 99197803421",
+            "label": "Água",
+            "normalizedMatchText": "cobranca sdd aguas da figueira adc 99197803421"
+          },
+          {
+            "id": "ce31cf09-182e-4e7a-a9c5-3747eb3a2939",
+            "matchText": "PAGAMENTO PRESTACAO CH Nº 4 PROCESSO 0530000789",
+            "label": "Prestação Casa",
+            "normalizedMatchText": "pagamento prestacao ch nº 4 processo 0530000789"
+          },
+          {
+            "id": "64e2ee56-76ce-46d5-9a2b-9809061e1555",
+            "matchText": "PAGAMENTO PRESTACAO CH Nº 157 PROCESSO 0288000360",
+            "label": "Prestação Casa Alhadas",
+            "normalizedMatchText": "pagamento prestacao ch nº 157 processo 0288000360"
+          },
+          {
+            "id": "d27de04b-1fab-46b1-8d66-e56fc3d9690b",
+            "matchText": "PAG. PRESTACAO CRD PESSOAL Nº 0530004347 20260123",
+            "label": "Prestação Cozinha",
+            "normalizedMatchText": "pag. prestacao crd pessoal nº 0530004347 20260123"
+          }
+        ]
+      },
+      "includeInTotals": true
+    },
+    {
+      "id": "b34ca953-39f0-47cb-878e-c5fe6064f360",
+      "bankName": "Novo Banco - Guilherme Leal",
+      "balance": 0,
+      "symbol": "data:image/jpeg;base64,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",
+      "financialProductsByPeriod": {
+        "2026-01": [
+          {
+            "id": "0342ae9c-8428-4842-9388-6907ae1a3f4e",
+            "kind": "financial",
+            "name": "Poupança programada filhos colaboradores",
+            "value": 4788.56
+          },
+          {
+            "id": "64fb3644-9665-4bd9-a25d-03d29b887e68",
+            "kind": "financial",
+            "name": "Dossier de fundos",
+            "value": 659.95
+          }
+        ],
+        "2026-02": [
+          {
+            "id": "00ef6e4f-47e5-4e50-9845-747f0eeb8ea6",
+            "kind": "financial",
+            "name": "Poupança programada filhos colaboradores",
+            "value": 4788.56
+          },
+          {
+            "id": "21458d2a-8989-4d79-bf05-12fbf7b5008c",
+            "kind": "financial",
+            "name": "Dossier de fundos",
+            "value": 659.95
+          }
+        ],
+        "2026-03": [
+          {
+            "id": "d87d3095-c394-4968-b1d9-850cca765965",
+            "kind": "financial",
+            "name": "Poupança programada filhos colaboradores",
+            "value": 4788.56
+          },
+          {
+            "id": "164ae6f5-e10a-474e-bb8a-f5997aa2429a",
+            "kind": "financial",
+            "name": "Dossier de fundos",
+            "value": 659.95
+          }
+        ],
+        "2026-04": [
+          {
+            "id": "bff57b43-d32b-4684-9c5e-caa91f384be0",
+            "kind": "financial",
+            "name": "Poupança programada filhos colaboradores",
+            "value": 4788.56
+          },
+          {
+            "id": "f2893c15-24c0-415f-bc14-335629061437",
+            "kind": "financial",
+            "name": "Dossier de fundos",
+            "value": 659.95
+          }
+        ]
+      },
+      "includeInTotals": false
+    },
+    {
+      "id": "d71100fb-41e1-482b-9cec-9e5926ccf61b",
+      "bankName": "Cofre Casa",
+      "balance": 2200,
+      "symbol": "data:image/jpeg;base64,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ttthtttKW/j27/7JIMpIr/yjzpp7TttsNtttcyMIzf8AsuRcyRr/AJVQP0A+222G22yAFhAFP/Hwkkkv/wDy+qz/AIrbbbDbbaxBOUC3/wDKEkkv/wD+QAExgjdtthtttgAAgAp//wDV67L/AP8AywALgBDttsNttjJJJIJP/wD/AG6S/wD/APmgSSSSDbbYbbbWAf8A/bIAAAASSSSUbAAAAO+22w22wTbbbbbbbbbbbbbbbbbbbbY222G2axNtttttpJJJJJJJJJJNtttt02w2zbbbbbbb6SSSSSSSSTbbbbbbbe2G22222222TWSSSy2WyWm22222222w22222222wywfSlWG222e22222222G22222222223+222222222222222w2222222222222222222222222222G222222222222222222222222222w2222222222222222222222222222G222222222222222222222222222w2222222222222222222222222222O222222222222222222222222222QgAAAAAAAAAAAAAAAAAAAAAAAAAAA3//EACoRAAIBAgQFBAMBAQAAAAAAAAABESAxECFBYTBRcbHwQKHB0VCBkeHx/9oACAEDAQE/EPzCt+ZVvzKt+ZVvWNoWRvCx6xW9ZJoCJFresVvWNZaBzLT6xW9Ok2JhCBEhyIciJEaDYaa9OrekSkTaiVcVox8g01f0itw0zQkNmh1JN2FzCSXoYGmg01ehDJC9yBk3JmrQrkxNCSEsEPuK5TLgK3DmVyJKUUmu4kl6VqTkGU0CSoPLp/h5EzyJnkTEnJP2Z5EzyJjZk/YzMaK1bhsJcdy+KUkPETBl3ElGo46txkmyASnJGfPISs5HsJFd8kXDvg0moY7NpV1nWdZ1nWdZJkJD4ytxUpcC6yYbJw0LWXfGJBPQbNDoSbcIRSuFRrW7jUobLiq3AclRXkhBCDaloY1KchdN3zwuiqiQe5tMEm0IWlerQSp5or5H/O/0/wCd/p/zv9P+d/pNLch8sUlDUYKQSbINxOnBVuBAjBbI2AmLNI2UbKNlGyjZRso2UbKNlDGMMaEJSFwZc1j4zmp8brRMsJlUomXBK3Dmz4b3EJCobMEsgu2OZ9h2oS2qt51EJKouFctkz2PY6fK606nDVuEl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",
+      "includeInTotals": false,
+      "financialProductsByPeriod": {},
+      "movementRulesByPeriod": {}
+    }
+  ],
+  "recycledAccounts": [],
+  "statementsByAccount": {
+    "c76ff9f9-9209-4a7e-836c-dd7260c777fd": {
+      "periods": {
+        "2026-04": [
+          {
+            "date": "2026-04-15",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 75,
+            "balance": 100.49
+          },
+          {
+            "date": "2026-04-14",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -20,
+            "balance": 25.49
+          },
+          {
+            "date": "2026-04-14",
+            "description": "COMPRA MB CARTAO ****715* LIDL AGRADECE 3080-034",
+            "amount": -32.41,
+            "balance": 45.49
+          },
+          {
+            "date": "2026-04-13",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -60,
+            "balance": 77.9
+          },
+          {
+            "date": "2026-04-13",
+            "description": "COBRANCA SDD LUSITANIAGAS COMERC ADC 10107277855",
+            "amount": -14.54,
+            "balance": 137.9
+          },
+          {
+            "date": "2026-04-13",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ DRA MARIA ALEXA",
+            "amount": -10,
+            "balance": 152.44
+          },
+          {
+            "date": "2026-04-12",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 55,
+            "balance": 162.44
+          },
+          {
+            "date": "2026-04-12",
+            "description": "CONST DEP PRAZO 100865148234",
+            "amount": -1000,
+            "balance": 107.44
+          },
+          {
+            "date": "2026-04-12",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 500,
+            "balance": 1107.44
+          },
+          {
+            "date": "2026-04-12",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 510,
+            "balance": 607.44
+          },
+          {
+            "date": "2026-04-11",
+            "description": "COMPRA MB CARTAO ****715* PINGO DOCE VILAMOURA ALBUFEIRA",
+            "amount": -6.3,
+            "balance": 97.44
+          },
+          {
+            "date": "2026-04-11",
+            "description": "COMPRA MB CARTAO ****715* PINGO DOCE VILAMOURA ALBUFEIRA",
+            "amount": -14.03,
+            "balance": 103.74
+          },
+          {
+            "date": "2026-04-10",
+            "description": "RETENCAO IMPOSTO PAGTO RENDIMENTO GNB Capital Plus",
+            "amount": -2.51,
+            "balance": 117.77
+          },
+          {
+            "date": "2026-04-10",
+            "description": "DISTRIBUICAO RENDIMENTOS DO FUNDO GNB Capital Plus",
+            "amount": 8.96,
+            "balance": 120.28
+          },
+          {
+            "date": "2026-04-09",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -40,
+            "balance": 111.32
+          },
+          {
+            "date": "2026-04-08",
+            "description": "ORDEM PERMANENTE INTRAB fracao M PARA CONDOMINIO R DOUTOR",
+            "amount": -34.16,
+            "balance": 151.32
+          },
+          {
+            "date": "2026-04-08",
+            "description": "JAMME 16,40 EUR CARTAO ****715*",
+            "amount": -16.4,
+            "balance": 185.48
+          },
+          {
+            "date": "2026-04-08",
+            "description": "COBRANCA SDD EDP COMERCIAL COMER ADC 16010014770968",
+            "amount": -99.24,
+            "balance": 201.88
+          },
+          {
+            "date": "2026-04-07",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ EUNICE M V LAVO",
+            "amount": -100,
+            "balance": 301.12
+          },
+          {
+            "date": "2026-04-04",
+            "description": "COMPRA MB CARTAO ****715* FARMACIA NOVA ALHADAS",
+            "amount": -21.45,
+            "balance": 401.12
+          },
+          {
+            "date": "2026-04-01",
+            "description": "COMPRA MB CARTAO ****715* Maksu Services SA Lisboa",
+            "amount": -0.3,
+            "balance": 422.57
+          },
+          {
+            "date": "2026-04-01",
+            "description": "COBRANCA SDD SAL CROSSFIT ADC 617",
+            "amount": -65,
+            "balance": 422.87
+          }
+        ],
+        "2026-01": [
+          {
+            "date": "2026-01-31",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -20,
+            "balance": 320.59
+          },
+          {
+            "date": "2026-01-31",
+            "description": "COMPRA MB CARTAO ****715* LIDL AGRADECE 3080-034",
+            "amount": -91.03,
+            "balance": 340.59
+          },
+          {
+            "date": "2026-01-31",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 431.62
+          },
+          {
+            "date": "2026-01-31",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 434.77
+          },
+          {
+            "date": "2026-01-30",
+            "description": "COMPRA MBWAY CARTAO **** 715* PAYSHOP PORTUGAL SA 1643-001 L",
+            "amount": -12.46,
+            "balance": 437.92
+          },
+          {
+            "date": "2026-01-30",
+            "description": "COMPRA INTERNET CARTAO ****715* A17 FIG",
+            "amount": -3.15,
+            "balance": 450.38
+          },
+          {
+            "date": "2026-01-30",
+            "description": "COMPRA INTERNET CARTAO ****715* A17 MIR",
+            "amount": -3.15,
+            "balance": 453.53
+          },
+          {
+            "date": "2026-01-30",
+            "description": "COBRANCA SDD Ginasio Clube Figue ADC 00000560853",
+            "amount": -19,
+            "balance": 456.68
+          },
+          {
+            "date": "2026-01-29",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 475.68
+          },
+          {
+            "date": "2026-01-29",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 478.83
+          },
+          {
+            "date": "2026-01-28",
+            "description": "TRF IMEDIATA SEPA+ DE SANDRA MARIZA TAVARES BENTO",
+            "amount": 5.85,
+            "balance": 481.98
+          },
+          {
+            "date": "2026-01-28",
+            "description": "PAG SERV PETROGAL, S A App 629154877 22228",
+            "amount": -65.35,
+            "balance": 476.13
+          },
+          {
+            "date": "2026-01-28",
+            "description": "COMPRA MB CARTAO ****715* FIGUEIRA RADICAL FIGUEIRA",
+            "amount": -110,
+            "balance": 541.48
+          },
+          {
+            "date": "2026-01-28",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 651.48
+          },
+          {
+            "date": "2026-01-28",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 654.63
+          },
+          {
+            "date": "2026-01-28",
+            "description": "COBRANCA SDD EDP COMERCIAL COMER ADC 16010014770968",
+            "amount": -40,
+            "balance": 657.78
+          },
+          {
+            "date": "2026-01-28",
+            "description": "COBRANCA SDD UNICEF Portugal ea ADC 50254878309",
+            "amount": -10,
+            "balance": 697.78
+          },
+          {
+            "date": "2026-01-27",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -10,
+            "balance": 707.78
+          },
+          {
+            "date": "2026-01-27",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -10,
+            "balance": 717.78
+          },
+          {
+            "date": "2026-01-27",
+            "description": "COMPRA MB CARTAO ****715* ALDI FIGUEIRA DA FOZ FIGUEIRA",
+            "amount": -3.15,
+            "balance": 727.78
+          },
+          {
+            "date": "2026-01-26",
+            "description": "COBRANCA SDD GAMALIFE-COMPANHIA ADC 33473350007",
+            "amount": -24.78,
+            "balance": 730.93
+          },
+          {
+            "date": "2026-01-26",
+            "description": "COBRANCA SDD GAMALIFE-COMPANHIA ADC 33473349037",
+            "amount": -19.95,
+            "balance": 755.71
+          },
+          {
+            "date": "2026-01-26",
+            "description": "COMPRA MB CARTAO ****715* PINGO DOCE NELAS NELAS",
+            "amount": -4.67,
+            "balance": 775.66
+          },
+          {
+            "date": "2026-01-26",
+            "description": "TRANSACAO VISA ORDEM CLIENTE CARTAO ****715* Revolut 5290",
+            "amount": -10,
+            "balance": 780.33
+          },
+          {
+            "date": "2026-01-26",
+            "description": "TRF CRED SEPA+ DE NUNO RICARDO PEREIRA LEAL CS",
+            "amount": 500,
+            "balance": 790.33
+          },
+          {
+            "date": "2026-01-25",
+            "description": "TRANSFERENCIA CONTA SERVICO DE 0006 1539 7198",
+            "amount": 200,
+            "balance": 290.33
+          },
+          {
+            "date": "2026-01-25",
+            "description": "COMPRA MB CARTAO ****715* AUCHAN FIGUEIRA FOZ FIGUEIRA",
+            "amount": -62.99,
+            "balance": 90.33
+          },
+          {
+            "date": "2026-01-25",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 153.32
+          },
+          {
+            "date": "2026-01-25",
+            "description": "Hofmann S.L.U 33,38 EUR CARTAO ****715*",
+            "amount": -33.38,
+            "balance": 156.47
+          },
+          {
+            "date": "2026-01-25",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 189.85
+          },
+          {
+            "date": "2026-01-24",
+            "description": "PAG SERV BANKINTER CONSUMER F App 628509954 21729",
+            "amount": -1000,
+            "balance": 193
+          },
+          {
+            "date": "2026-01-24",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ REGINA MARIA FA",
+            "amount": -7,
+            "balance": 1193
+          },
+          {
+            "date": "2026-01-24",
+            "description": "TRANSFERENCIA CONTA SERVICO PARA 0006 1539 7198",
+            "amount": -700,
+            "balance": 1200
+          },
+          {
+            "date": "2026-01-24",
+            "description": "COMPRA MB CARTAO ****715* INTERMARCHE FIG FOZ TAVAREDE",
+            "amount": -40,
+            "balance": 1900
+          },
+          {
+            "date": "2026-01-24",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 1940
+          },
+          {
+            "date": "2026-01-24",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 1943.15
+          },
+          {
+            "date": "2026-01-24",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ PAULA MARGARIDA",
+            "amount": -66,
+            "balance": 1946.3
+          },
+          {
+            "date": "2026-01-23",
+            "description": "TRF ENTREGA PROGRAMADA MENSAL PARA 1008 1766 0429",
+            "amount": -100,
+            "balance": 2012.3
+          },
+          {
+            "date": "2026-01-23",
+            "description": "TRF CRED SEPA+ DE SINDICATO INDEPENDENTE DA BANCA",
+            "amount": 37,
+            "balance": 2112.3
+          },
+          {
+            "date": "2026-01-23",
+            "description": "COMPRA MBWAY CARTAO **** 715* PORTO EDITORA PORTO",
+            "amount": -14.45,
+            "balance": 2075.3
+          },
+          {
+            "date": "2026-01-23",
+            "description": "TRF CRED INTRAB Online 628196189 P/ DRA. JOANA MARTINHO MON",
+            "amount": -500,
+            "balance": 2089.75
+          },
+          {
+            "date": "2026-01-23",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -20,
+            "balance": 2589.75
+          },
+          {
+            "date": "2026-01-23",
+            "description": "COMPRA MB CARTAO ****715* PINGO DOCE FIG FOZ T FIGUEIRA",
+            "amount": -19.66,
+            "balance": 2609.75
+          },
+          {
+            "date": "2026-01-23",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 2629.41
+          },
+          {
+            "date": "2026-01-23",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 2632.56
+          },
+          {
+            "date": "2026-01-23",
+            "description": "COBRANCA SDD AGUAS DA FIGUEIRA ADC 99197803421",
+            "amount": -36.04,
+            "balance": 2635.71
+          },
+          {
+            "date": "2026-01-23",
+            "description": "PAGAMENTO PRESTACAO CH Nº 4 PROCESSO 0530000789",
+            "amount": -429.58,
+            "balance": 2671.75
+          },
+          {
+            "date": "2026-01-23",
+            "description": "PAGAMENTO PRESTACAO CH Nº 157 PROCESSO 0288000360",
+            "amount": -172.01,
+            "balance": 3101.33
+          },
+          {
+            "date": "2026-01-23",
+            "description": "PAG. PRESTACAO CRD PESSOAL Nº 0530004347 20260123",
+            "amount": -128.59,
+            "balance": 3273.34
+          },
+          {
+            "date": "2026-01-23",
+            "description": "ORDENADO / PENSAO NB NB18687 VENCIMENTOS",
+            "amount": 3303.34,
+            "balance": 3401.93
+          },
+          {
+            "date": "2026-01-22",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 50,
+            "balance": 98.59
+          },
+          {
+            "date": "2026-01-22",
+            "description": "COMPRA INTERNET CARTAO ****715* PINTO,SANT,PRAG CAT COI",
+            "amount": -15.5,
+            "balance": 48.59
+          },
+          {
+            "date": "2026-01-21",
+            "description": "COMPRA MBWAY CARTAO **** 715* PAYSHOP PORTUGAL SA 1643-001 L",
+            "amount": -7.22,
+            "balance": 64.09
+          },
+          {
+            "date": "2026-01-21",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 71.31
+          },
+          {
+            "date": "2026-01-21",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 74.46
+          },
+          {
+            "date": "2026-01-20",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -40,
+            "balance": 77.61
+          },
+          {
+            "date": "2026-01-20",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -10,
+            "balance": 117.61
+          },
+          {
+            "date": "2026-01-20",
+            "description": "COMPRA MB CARTAO ****715* JET 7 5 FOOD DRINKS FIGUEIRA",
+            "amount": -54,
+            "balance": 127.61
+          },
+          {
+            "date": "2026-01-19",
+            "description": "COMPRA MB CARTAO ****715* CONTINENTE MODELO MO TAVAREDE",
+            "amount": -103.55,
+            "balance": 181.61
+          },
+          {
+            "date": "2026-01-19",
+            "description": "COMPRA MB CARTAO ****715* NOTE FIGUEIRA FOZ TAVAREDE",
+            "amount": -11.6,
+            "balance": 285.16
+          },
+          {
+            "date": "2026-01-19",
+            "description": "COMPRA MB CARTAO ****715* E LECLERC FIG FOZ FIGUEIRA",
+            "amount": -40,
+            "balance": 296.76
+          },
+          {
+            "date": "2026-01-19",
+            "description": "COMPRA MB CARTAO ****715* SPORT ZONE FIGUEIRA",
+            "amount": -62.98,
+            "balance": 336.76
+          },
+          {
+            "date": "2026-01-19",
+            "description": "COMPRA MB CARTAO ****715* AUCHAN FIGUEIRA FOZ FIGUEIRA",
+            "amount": -5.7,
+            "balance": 399.74
+          },
+          {
+            "date": "2026-01-19",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 100,
+            "balance": 405.44
+          },
+          {
+            "date": "2026-01-19",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 305.44
+          },
+          {
+            "date": "2026-01-19",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 308.59
+          },
+          {
+            "date": "2026-01-17",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 100,
+            "balance": 311.74
+          },
+          {
+            "date": "2026-01-17",
+            "description": "COMPRA MB CARTAO ****715* INTERMARCHE FIG FOZ TAVAREDE",
+            "amount": -20,
+            "balance": 211.74
+          },
+          {
+            "date": "2026-01-17",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 231.74
+          },
+          {
+            "date": "2026-01-17",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 234.89
+          },
+          {
+            "date": "2026-01-16",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 150,
+            "balance": 238.04
+          },
+          {
+            "date": "2026-01-15",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -10,
+            "balance": 88.04
+          },
+          {
+            "date": "2026-01-15",
+            "description": "COMPRA MB CARTAO ****715* CONTINENTE MODELO MO TAVAREDE",
+            "amount": -28.4,
+            "balance": 98.04
+          },
+          {
+            "date": "2026-01-15",
+            "description": "COMPRA MB CARTAO ****715* PASTELARIA TRADICAO ALHADAS",
+            "amount": -24.06,
+            "balance": 126.44
+          },
+          {
+            "date": "2026-01-14",
+            "description": "COMPRA MB CARTAO ****715* MICHAEL CAMACHO N 2 1 M -",
+            "amount": -12,
+            "balance": 150.5
+          },
+          {
+            "date": "2026-01-13",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -20,
+            "balance": 162.5
+          },
+          {
+            "date": "2026-01-13",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -10,
+            "balance": 182.5
+          },
+          {
+            "date": "2026-01-13",
+            "description": "COMPRA MB CARTAO ****715* PRIMOR COIMBRA COIMBRA",
+            "amount": -15.27,
+            "balance": 192.5
+          },
+          {
+            "date": "2026-01-13",
+            "description": "COMPRA MB CARTAO ****715* SPORT ZONE FIGUEIRA",
+            "amount": -12.99,
+            "balance": 207.77
+          },
+          {
+            "date": "2026-01-12",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 150,
+            "balance": 220.76
+          },
+          {
+            "date": "2026-01-12",
+            "description": "COMPRA MB CARTAO ****715* CONTINENTE MODELO MO TAVAREDE",
+            "amount": -9.66,
+            "balance": 70.76
+          },
+          {
+            "date": "2026-01-12",
+            "description": "COMPRA MB CARTAO ****715* LIDL AGRADECE 3080-034",
+            "amount": -12.29,
+            "balance": 80.42
+          },
+          {
+            "date": "2026-01-12",
+            "description": "COMPRA MB CARTAO ****715* Maksu Services SA Lisboa",
+            "amount": -0.35,
+            "balance": 92.71
+          },
+          {
+            "date": "2026-01-11",
+            "description": "COMPRA MB CARTAO ****715* CONTINENTE MODELO MO TAVAREDE",
+            "amount": -17.75,
+            "balance": 93.06
+          },
+          {
+            "date": "2026-01-09",
+            "description": "LEVANTAMENTO NUMERARIO EM ATM",
+            "amount": -30,
+            "balance": 110.81
+          },
+          {
+            "date": "2026-01-09",
+            "description": "COMPRA MB CARTAO **** 715* PAPELARIA ACADEMICA 2460-062 ALCO",
+            "amount": -5.3,
+            "balance": 140.81
+          },
+          {
+            "date": "2026-01-08",
+            "description": "ORDEM PERMANENTE INTRAB fracao M PARA CONDOMINIO R DOUTOR",
+            "amount": -34.16,
+            "balance": 146.11
+          },
+          {
+            "date": "2026-01-07",
+            "description": "CASHBACK CONTA - REEMBOLSO DE COMPRAS",
+            "amount": 0.37,
+            "balance": 180.27
+          },
+          {
+            "date": "2026-01-07",
+            "description": "COBRANCA SDD MUDUM - COMPANHIA D ADC 59675255",
+            "amount": -132.68,
+            "balance": 179.9
+          },
+          {
+            "date": "2026-01-06",
+            "description": "COMPRA MB CARTAO ****715* EMANHA FIGUEIRA",
+            "amount": -16.8,
+            "balance": 312.58
+          },
+          {
+            "date": "2026-01-05",
+            "description": "COMPRA MB CARTAO ****715* Maksu Services SA Lisboa",
+            "amount": -0.7,
+            "balance": 329.38
+          },
+          {
+            "date": "2026-01-04",
+            "description": "COMPRA MBWAY CARTAO **** 715* EUPAGO- INST PAG LDAPORTO",
+            "amount": -15,
+            "balance": 330.08
+          },
+          {
+            "date": "2026-01-04",
+            "description": "COMPRA MBWAY CARTAO **** 715* EUPAGO- INST PAG LDAPORTO",
+            "amount": -15,
+            "balance": 345.08
+          },
+          {
+            "date": "2026-01-03",
+            "description": "COMPRA MBWAY CARTAO **** 715* TICKET LINE SA PARIS",
+            "amount": -60.13,
+            "balance": 360.08
+          },
+          {
+            "date": "2026-01-03",
+            "description": "COMPRA MB CARTAO **** 715* PEIXARIA LENA NIF 510942806",
+            "amount": -33,
+            "balance": 420.21
+          },
+          {
+            "date": "2026-01-02",
+            "description": "TRANSFERENCIA MBWAY PARA 914153444",
+            "amount": -40,
+            "balance": 453.21
+          },
+          {
+            "date": "2026-01-02",
+            "description": "COBRANCA SDD SAL CROSSFIT ADC Joana Monteiro",
+            "amount": -70,
+            "balance": 493.21
+          },
+          {
+            "date": "2026-01-02",
+            "description": "COBRANCA SDD BKCF bankintercard ADC 26903745382",
+            "amount": -153.84,
+            "balance": 563.21
+          }
+        ],
+        "2026-02": [
+          {
+            "date": "2026-02-28",
+            "description": "COMPRA MB CARTAO **** 715* RESTAURANTE VIDEIRA GUARDA",
+            "amount": -32,
+            "balance": 1083.1
+          },
+          {
+            "date": "2026-02-27",
+            "description": "TRF CRED INTRAB App 635791326 P/ DRA. JOANA MARTINHO MONTEI",
+            "amount": -100,
+            "balance": 1115.1
+          },
+          {
+            "date": "2026-02-27",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ CARLOS A TEIXEI",
+            "amount": -4.15,
+            "balance": 1215.1
+          },
+          {
+            "date": "2026-02-26",
+            "description": "TRF IMEDIATA SEPA+ DE NUNO RICARDO PEREIRA LEAL",
+            "amount": 195,
+            "balance": 1219.25
+          },
+          {
+            "date": "2026-02-25",
+            "description": "TRANSFERENCIA MBWAY PARA 913996222",
+            "amount": -13,
+            "balance": 1024.25
+          },
+          {
+            "date": "2026-02-25",
+            "description": "PAG SERV PETROGAL, S A Online 635157649 22228",
+            "amount": -349.38,
+            "balance": 1037.25
+          },
+          {
+            "date": "2026-02-25",
+            "description": "COMPRA MBWAY CARTAO **** 715* PAYSHOP PORTUGAL SA 1643-001 L",
+            "amount": -14.46,
+            "balance": 1386.63
+          },
+          {
+            "date": "2026-02-25",
+            "description": "Vinted 68,69 EUR CARTAO ****715*",
+            "amount": -68.69,
+            "balance": 1401.09
+          },
+          {
+            "date": "2026-02-25",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 1469.78
+          },
+          {
+            "date": "2026-02-25",
+            "description": "COMPRA MB CARTAO ****715* E LECLERC FIG FOZ FIGUEIRA",
+            "amount": -15,
+            "balance": 1472.93
+          },
+          {
+            "date": "2026-02-25",
+            "description": "COMPRA INTERNET CARTAO ****715* NOTE FIGUEIRA FOZ TAV",
+            "amount": -6.15,
+            "balance": 1487.93
+          },
+          {
+            "date": "2026-02-25",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 1494.08
+          },
+          {
+            "date": "2026-02-25",
+            "description": "TRF CRED SEPA+ DE NUNO RICARDO PEREIRA LEAL CS",
+            "amount": 500,
+            "balance": 1497.23
+          },
+          {
+            "date": "2026-02-24",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -30,
+            "balance": 997.23
+          },
+          {
+            "date": "2026-02-24",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ NUNO RICARDO PE",
+            "amount": -23.55,
+            "balance": 1027.23
+          },
+          {
+            "date": "2026-02-23",
+            "description": "TRF ENTREGA PROGRAMADA MENSAL PARA 1008 1766 0429",
+            "amount": -100,
+            "balance": 1050.78
+          },
+          {
+            "date": "2026-02-23",
+            "description": "COMPRA MBWAY CARTAO **** 715* VIVA MERCHANT PT LISBON",
+            "amount": -56.56,
+            "balance": 1150.78
+          },
+          {
+            "date": "2026-02-23",
+            "description": "PAG SERV BANKINTER CONSUMER F Online 634726567 21729",
+            "amount": -800,
+            "balance": 1207.34
+          },
+          {
+            "date": "2026-02-23",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ NUNO RICARDO PE",
+            "amount": -200,
+            "balance": 2007.34
+          },
+          {
+            "date": "2026-02-23",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ MIGUEL J EUSEBI",
+            "amount": -11,
+            "balance": 2207.34
+          },
+          {
+            "date": "2026-02-23",
+            "description": "COBRANCA SDD GAMALIFE-COMPANHIA ADC 33473350007",
+            "amount": -24.78,
+            "balance": 2218.34
+          },
+          {
+            "date": "2026-02-23",
+            "description": "COBRANCA SDD GAMALIFE-COMPANHIA ADC 33473349037",
+            "amount": -19.95,
+            "balance": 2243.12
+          },
+          {
+            "date": "2026-02-23",
+            "description": "PAGAMENTO PRESTACAO CH Nº 5 PROCESSO 0530000789",
+            "amount": -429.58,
+            "balance": 2263.07
+          },
+          {
+            "date": "2026-02-23",
+            "description": "PAGAMENTO PRESTACAO CH Nº 158 PROCESSO 0288000360",
+            "amount": -172.01,
+            "balance": 2692.65
+          },
+          {
+            "date": "2026-02-23",
+            "description": "PAG. PRESTACAO CRD PESSOAL Nº 0530004347 20260223",
+            "amount": -128.59,
+            "balance": 2864.66
+          },
+          {
+            "date": "2026-02-23",
+            "description": "ORDENADO / PENSAO NB NB18687 VENCIMENTOS",
+            "amount": 2992.76,
+            "balance": 2993.25
+          },
+          {
+            "date": "2026-02-22",
+            "description": "TRANSACAO VISA ORDEM CLIENTE CARTAO ****715* Revolut 5290",
+            "amount": -10,
+            "balance": 0.49
+          },
+          {
+            "date": "2026-02-22",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 10.49
+          },
+          {
+            "date": "2026-02-22",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 13.64
+          },
+          {
+            "date": "2026-02-21",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ NUNO RICARDO PE",
+            "amount": -800,
+            "balance": 16.79
+          },
+          {
+            "date": "2026-02-20",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -20,
+            "balance": 816.79
+          },
+          {
+            "date": "2026-02-20",
+            "description": "PAG. 2002266370 SEGURO AUTO M",
+            "amount": -215.49,
+            "balance": 836.79
+          },
+          {
+            "date": "2026-02-20",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ CARLOS A TEIXEI",
+            "amount": -1.7,
+            "balance": 1052.28
+          },
+          {
+            "date": "2026-02-20",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 1053.98
+          },
+          {
+            "date": "2026-02-20",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 1057.13
+          },
+          {
+            "date": "2026-02-20",
+            "description": "IR RETIDO S/ FUNDO GNB Capital",
+            "amount": -3.72,
+            "balance": 1060.28
+          },
+          {
+            "date": "2026-02-20",
+            "description": "RESGATE DO FUNDO GNB Capital",
+            "amount": 1000,
+            "balance": 1064
+          },
+          {
+            "date": "2026-02-19",
+            "description": "COMPRA MB CARTAO **** 715* LIDL AGRADECE 3080-034 BUAR",
+            "amount": -15.5,
+            "balance": 64
+          },
+          {
+            "date": "2026-02-19",
+            "description": "COMPRA MB CARTAO ****715* LIDL AGRADECE 3080-034",
+            "amount": -9,
+            "balance": 79.5
+          },
+          {
+            "date": "2026-02-18",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -0.5,
+            "balance": 88.5
+          },
+          {
+            "date": "2026-02-18",
+            "description": "TRANSACAO VISA ORDEM CLIENTE CARTAO ****715* Revolut 5290",
+            "amount": -10,
+            "balance": 89
+          },
+          {
+            "date": "2026-02-18",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 99
+          },
+          {
+            "date": "2026-02-17",
+            "description": "COMPRA MB CARTAO ****715* AUCHAN ENERGY SA FIG FIGUEIRA",
+            "amount": -45,
+            "balance": 102.15
+          },
+          {
+            "date": "2026-02-17",
+            "description": "COMPRA MB CARTAO ****715* ALDI FIGUEIRA DA FOZ FIGUEIRA",
+            "amount": -1.98,
+            "balance": 147.15
+          },
+          {
+            "date": "2026-02-16",
+            "description": "COMPRA MB CARTAO ****715* CONTINENTE MODELO MO TAVAREDE",
+            "amount": -16.06,
+            "balance": 149.13
+          },
+          {
+            "date": "2026-02-16",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -20,
+            "balance": 165.19
+          },
+          {
+            "date": "2026-02-16",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 100,
+            "balance": 185.19
+          },
+          {
+            "date": "2026-02-16",
+            "description": "COMPRA MB CARTAO ****715* MARTINS MARCELINO ILHAVO",
+            "amount": -10,
+            "balance": 85.19
+          },
+          {
+            "date": "2026-02-13",
+            "description": "COMPRA MB CARTAO ****715* MERCADONA FIGUEIRA",
+            "amount": -27.95,
+            "balance": 95.19
+          },
+          {
+            "date": "2026-02-13",
+            "description": "COBRANCA SDD AGUAS DA FIGUEIRA ADC 99197803421",
+            "amount": -30.44,
+            "balance": 123.14
+          },
+          {
+            "date": "2026-02-12",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 100,
+            "balance": 153.58
+          },
+          {
+            "date": "2026-02-12",
+            "description": "COMPRA MBWAY CARTAO **** 715* PAYSHOP PORTUGAL SA 1643-001 L",
+            "amount": -17.76,
+            "balance": 53.58
+          },
+          {
+            "date": "2026-02-12",
+            "description": "COMPRA MB CARTAO ****715* CALDEIRA CALDEIRA 3080-436",
+            "amount": -45,
+            "balance": 71.34
+          },
+          {
+            "date": "2026-02-12",
+            "description": "COBRANCA SDD LUSITANIAGAS COMERC ADC 10107277855",
+            "amount": -55.82,
+            "balance": 116.34
+          },
+          {
+            "date": "2026-02-11",
+            "description": "COMPRA INTERNET CARTAO ****715* Nike PT +31",
+            "amount": -79.99,
+            "balance": 172.16
+          },
+          {
+            "date": "2026-02-10",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -10,
+            "balance": 252.15
+          },
+          {
+            "date": "2026-02-09",
+            "description": "ORDEM PERMANENTE INTRAB fracao M PARA CONDOMINIO R DOUTOR",
+            "amount": -34.16,
+            "balance": 262.15
+          },
+          {
+            "date": "2026-02-09",
+            "description": "COMPRA MB CARTAO ****715* ALDI FIGUEIRA DA FOZ FIGUEIRA",
+            "amount": -15.1,
+            "balance": 296.31
+          },
+          {
+            "date": "2026-02-09",
+            "description": "SUBSCRICAO DO FUNDO GNB Capital Plus",
+            "amount": -25,
+            "balance": 311.41
+          },
+          {
+            "date": "2026-02-08",
+            "description": "DEPOSITO DE NUMERARIO ATM MB 020802247060556",
+            "amount": 120,
+            "balance": 336.41
+          },
+          {
+            "date": "2026-02-08",
+            "description": "TRANSACAO VISA ORDEM CLIENTE CARTAO ****715* Revolut 5290",
+            "amount": -10,
+            "balance": 216.41
+          },
+          {
+            "date": "2026-02-08",
+            "description": "COMPRA MB CARTAO ****715* NOTE FIGUEIRA FOZ TAVAREDE",
+            "amount": -7,
+            "balance": 226.41
+          },
+          {
+            "date": "2026-02-08",
+            "description": "COMPRA MB CARTAO ****715* CONTINENTE MODELO MO TAVAREDE",
+            "amount": -1.55,
+            "balance": 233.41
+          },
+          {
+            "date": "2026-02-07",
+            "description": "COMPRA MB CARTAO ****715* AUCHAN ENERGY SA FIG FIGUEIRA",
+            "amount": -40,
+            "balance": 234.96
+          },
+          {
+            "date": "2026-02-06",
+            "description": "TRANSFERENCIA CONTA SERVICO DE 0006 1539 7198",
+            "amount": 100,
+            "balance": 274.96
+          },
+          {
+            "date": "2026-02-06",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ NUNO RICARDO PE",
+            "amount": -110,
+            "balance": 174.96
+          },
+          {
+            "date": "2026-02-05",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -20,
+            "balance": 284.96
+          },
+          {
+            "date": "2026-02-05",
+            "description": "PAYPAL GFM GOFUNDME 21,00 EUR CARTAO ****715*",
+            "amount": -21,
+            "balance": 304.96
+          },
+          {
+            "date": "2026-02-05",
+            "description": "COMPRA MB CARTAO ****715* A14 MONTEMOR-",
+            "amount": -0.5,
+            "balance": 325.96
+          },
+          {
+            "date": "2026-02-05",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 326.46
+          },
+          {
+            "date": "2026-02-05",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 329.61
+          },
+          {
+            "date": "2026-02-04",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 332.76
+          },
+          {
+            "date": "2026-02-04",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 335.91
+          },
+          {
+            "date": "2026-02-03",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 135,
+            "balance": 339.06
+          },
+          {
+            "date": "2026-02-03",
+            "description": "COMPRA MBWAY CARTAO **** 715* NOS ALIVE DCH 1400-297 L",
+            "amount": -134.4,
+            "balance": 204.06
+          },
+          {
+            "date": "2026-02-02",
+            "description": "TRANSFERENCIA CONTA SERVICO DE 0006 1539 7198",
+            "amount": 300,
+            "balance": 338.46
+          },
+          {
+            "date": "2026-02-02",
+            "description": "TRANSFERENCIA CONTA SERVICO DE 0006 1539 7198",
+            "amount": 100,
+            "balance": 38.46
+          },
+          {
+            "date": "2026-02-02",
+            "description": "COBRANCA SDD EDP COMERCIAL COMER ADC 16010014770968",
+            "amount": -215.4,
+            "balance": -61.54
+          },
+          {
+            "date": "2026-02-02",
+            "description": "COBRANCA SDD SAL CROSSFIT ADC 617",
+            "amount": -55,
+            "balance": 153.86
+          },
+          {
+            "date": "2026-02-02",
+            "description": "COBRANCA SDD FNAC Portugal ADC 1582037001",
+            "amount": -15,
+            "balance": 208.86
+          },
+          {
+            "date": "2026-02-02",
+            "description": "COMPRA MB CARTAO ****715* Maksu Services SA Lisboa",
+            "amount": -0.4,
+            "balance": 223.86
+          },
+          {
+            "date": "2026-02-02",
+            "description": "COMPRA MB CARTAO ****715* DANYANY ALEXANDRE FIGUEIRA",
+            "amount": -13,
+            "balance": 224.26
+          },
+          {
+            "date": "2026-02-02",
+            "description": "COMPRA MB CARTAO ****715* CSE, LDA FIGUEIRA",
+            "amount": -31.25,
+            "balance": 237.26
+          },
+          {
+            "date": "2026-02-02",
+            "description": "COMPRA MB CARTAO ****715* AUCHAN FIGUEIRA FOZ FIGUEIRA",
+            "amount": -10.78,
+            "balance": 268.51
+          },
+          {
+            "date": "2026-02-02",
+            "description": "SUBSCRICAO DO FUNDO GNB Capital Plus",
+            "amount": -25,
+            "balance": 279.29
+          },
+          {
+            "date": "2026-02-01",
+            "description": "COMPRA MB CARTAO ****715* A17 FIGUEIRA",
+            "amount": -3.15,
+            "balance": 304.29
+          },
+          {
+            "date": "2026-02-01",
+            "description": "TRANSACAO VISA ORDEM CLIENTE CARTAO ****715* Revolut 5290",
+            "amount": -10,
+            "balance": 307.44
+          },
+          {
+            "date": "2026-02-01",
+            "description": "COMPRA MB CARTAO ****715* A17 MIRA",
+            "amount": -3.15,
+            "balance": 317.44
+          }
+        ],
+        "2026-03": [
+          {
+            "date": "2026-03-23",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -20,
+            "balance": 984.29
+          },
+          {
+            "date": "2026-03-23",
+            "description": "COMPRA MBWAY CARTAO **** 715* HIPAY LEVALLOIS-",
+            "amount": -151.8,
+            "balance": 1004.29
+          },
+          {
+            "date": "2026-03-23",
+            "description": "TRF CRED INTRAB Online 641064126 P/ DRA. JOANA MARTINHO MON",
+            "amount": -100,
+            "balance": 1156.09
+          },
+          {
+            "date": "2026-03-23",
+            "description": "COBRANCA SDD EDP COMERCIAL COMER ADC 16010014770968",
+            "amount": -88.11,
+            "balance": 1256.09
+          },
+          {
+            "date": "2026-03-23",
+            "description": "COBRANCA SDD GAMALIFE-COMPANHIA ADC 33473350007",
+            "amount": -24.78,
+            "balance": 1344.2
+          },
+          {
+            "date": "2026-03-23",
+            "description": "COBRANCA SDD GAMALIFE-COMPANHIA ADC 33473349037",
+            "amount": -19.95,
+            "balance": 1368.98
+          },
+          {
+            "date": "2026-03-23",
+            "description": "PAGAMENTO PRESTACAO CH Nº 6 PROCESSO 0530000789",
+            "amount": -429.58,
+            "balance": 1388.93
+          },
+          {
+            "date": "2026-03-23",
+            "description": "PAGAMENTO PRESTACAO CH Nº 159 PROCESSO 0288000360",
+            "amount": -172.01,
+            "balance": 1818.51
+          },
+          {
+            "date": "2026-03-23",
+            "description": "PAG. PRESTACAO CRD PESSOAL Nº 0530004347 20260323",
+            "amount": -128.59,
+            "balance": 1990.52
+          },
+          {
+            "date": "2026-03-23",
+            "description": "COMPRA INTERNET CARTAO ****715* SILVA TOME LDA FIG",
+            "amount": -9.81,
+            "balance": 2119.11
+          },
+          {
+            "date": "2026-03-23",
+            "description": "ORDENADO / PENSAO NB NB18687 VENCIMENTOS",
+            "amount": 2082.88,
+            "balance": 2128.92
+          },
+          {
+            "date": "2026-03-21",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ VITOR MANUEL N",
+            "amount": -4.2,
+            "balance": 46.04
+          },
+          {
+            "date": "2026-03-20",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -40,
+            "balance": 50.24
+          },
+          {
+            "date": "2026-03-20",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 50,
+            "balance": 90.24
+          },
+          {
+            "date": "2026-03-18",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ CARLOS A TEIXEI",
+            "amount": -2.4,
+            "balance": 40.24
+          },
+          {
+            "date": "2026-03-18",
+            "description": "COMPRA MB CARTAO ****715* PINGO DOCE VAGOS VAGOS",
+            "amount": -38.45,
+            "balance": 42.64
+          },
+          {
+            "date": "2026-03-18",
+            "description": "TRANSACAO VISA ORDEM CLIENTE CARTAO ****715* Revolut 5290",
+            "amount": -10,
+            "balance": 81.09
+          },
+          {
+            "date": "2026-03-17",
+            "description": "COBRANCA SDD AGUAS DA FIGUEIRA ADC 99197803421",
+            "amount": -37.64,
+            "balance": 91.09
+          },
+          {
+            "date": "2026-03-17",
+            "description": "COMPRA MBWAY CARTAO **** 715* MBWAY IFTHENPAY S M LAMAS",
+            "amount": -17.29,
+            "balance": 128.73
+          },
+          {
+            "date": "2026-03-17",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -10,
+            "balance": 146.02
+          },
+          {
+            "date": "2026-03-17",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 100,
+            "balance": 156.02
+          },
+          {
+            "date": "2026-03-17",
+            "description": "COMPRA MB CARTAO ****715* MERCADONA FIGUEIRA",
+            "amount": -10.35,
+            "balance": 56.02
+          },
+          {
+            "date": "2026-03-16",
+            "description": "COMPRA CARTAO **** 715* DANYANY ALEXANDRE FIGUEIRA FOZ",
+            "amount": -18,
+            "balance": 66.37
+          },
+          {
+            "date": "2026-03-16",
+            "description": "COBRANCA SDD LUSITANIAGAS COMERC ADC 10107277855",
+            "amount": -80.63,
+            "balance": 84.37
+          },
+          {
+            "date": "2026-03-16",
+            "description": "COMPRA MB CARTAO ****715* Maksu Services SA Lisboa",
+            "amount": -0.5,
+            "balance": 165
+          },
+          {
+            "date": "2026-03-16",
+            "description": "COMPRA MB CARTAO ****715* ALDI FIGUEIRA DA FOZ FIGUEIRA",
+            "amount": -3.96,
+            "balance": 165.5
+          },
+          {
+            "date": "2026-03-16",
+            "description": "COMPRA MB CARTAO ****715* DANYANY ALEXANDRE FIGUEIRA",
+            "amount": -14,
+            "balance": 169.46
+          },
+          {
+            "date": "2026-03-14",
+            "description": "TRF CRED INTRAB DE DRA. JOANA MARTINHO MONTEIRO",
+            "amount": 100,
+            "balance": 183.46
+          },
+          {
+            "date": "2026-03-14",
+            "description": "COMPRA MBWAY CARTAO **** 715* EASYPAY LISBOA",
+            "amount": -72.98,
+            "balance": 83.46
+          },
+          {
+            "date": "2026-03-14",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -40,
+            "balance": 156.44
+          },
+          {
+            "date": "2026-03-14",
+            "description": "COMPRA MB CARTAO ****715* PINGO DOCE FIG FOZ T FIGUEIRA",
+            "amount": -9.08,
+            "balance": 196.44
+          },
+          {
+            "date": "2026-03-12",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -10,
+            "balance": 205.52
+          },
+          {
+            "date": "2026-03-12",
+            "description": "COMPRA MB CARTAO ****715* CONTINENTE MODELO MO TAVAREDE",
+            "amount": -10.91,
+            "balance": 215.52
+          },
+          {
+            "date": "2026-03-12",
+            "description": "COMPRA MB CARTAO ****715* NOTE FIGUEIRA FOZ TAVAREDE",
+            "amount": -3.94,
+            "balance": 226.43
+          },
+          {
+            "date": "2026-03-11",
+            "description": "COMPRA CARTAO **** 715* E LECLERC FIG FOZ TAVAREDE",
+            "amount": -8.53,
+            "balance": 230.37
+          },
+          {
+            "date": "2026-03-11",
+            "description": "COMPRA MB CARTAO ****715* RESTAURANTE JARDIM D COIMBRA",
+            "amount": -11,
+            "balance": 238.9
+          },
+          {
+            "date": "2026-03-10",
+            "description": "COMPRA CARTAO **** 715* BP FIGUEIRA DA FOZ POSTO DA BP",
+            "amount": -14.5,
+            "balance": 249.9
+          },
+          {
+            "date": "2026-03-10",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ ANA MARIA FERNA",
+            "amount": -10,
+            "balance": 264.4
+          },
+          {
+            "date": "2026-03-10",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -90,
+            "balance": 274.4
+          },
+          {
+            "date": "2026-03-10",
+            "description": "COMPRA MB CARTAO ****715* MERCADONA FIGUEIRA",
+            "amount": -20.74,
+            "balance": 364.4
+          },
+          {
+            "date": "2026-03-10",
+            "description": "SUBSCRICAO DO FUNDO GNB Capital",
+            "amount": -40,
+            "balance": 385.14
+          },
+          {
+            "date": "2026-03-09",
+            "description": "ORDEM PERMANENTE INTRAB fracao M PARA CONDOMINIO R DOUTOR",
+            "amount": -34.16,
+            "balance": 425.14
+          },
+          {
+            "date": "2026-03-09",
+            "description": "COMPRA MB CARTAO ****715* BK23525 VISEU DRIVE 3510-204",
+            "amount": -16.15,
+            "balance": 459.3
+          },
+          {
+            "date": "2026-03-09",
+            "description": "SUBSCRICAO DO FUNDO GNB Capital Plus",
+            "amount": -25,
+            "balance": 475.45
+          },
+          {
+            "date": "2026-03-08",
+            "description": "TRANSACAO VISA ORDEM CLIENTE CARTAO ****715* Revolut 5290",
+            "amount": -10,
+            "balance": 500.45
+          },
+          {
+            "date": "2026-03-07",
+            "description": "COMPRA MB CARTAO ****715* LIDL AGRADECE 3080-034",
+            "amount": -25.55,
+            "balance": 510.45
+          },
+          {
+            "date": "2026-03-07",
+            "description": "COMPRA MB CARTAO ****715* MA 25 ABRIL ILHAVO ILHAVO",
+            "amount": -6.85,
+            "balance": 536
+          },
+          {
+            "date": "2026-03-07",
+            "description": "TRF IMEDIATA SEPA+ DE NUNO RICARDO PEREIRA LEAL",
+            "amount": 40,
+            "balance": 542.85
+          },
+          {
+            "date": "2026-03-06",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -90,
+            "balance": 502.85
+          },
+          {
+            "date": "2026-03-06",
+            "description": "DEPOSITO NUMERARIO (ATM)",
+            "amount": 90,
+            "balance": 592.85
+          },
+          {
+            "date": "2026-03-06",
+            "description": "IMPOSTO RENDIMENTO S/ JUROS DEPOSITO A PRAZO",
+            "amount": -0.65,
+            "balance": 502.85
+          },
+          {
+            "date": "2026-03-06",
+            "description": "JUROS 100847980204 - 06/09/2025 A 05/03/2026 - 0,9000 A)",
+            "amount": 2.31,
+            "balance": 503.5
+          },
+          {
+            "date": "2026-03-05",
+            "description": "COMPRA CARTAO **** 715* ASS ANIECA LISBOA",
+            "amount": -30,
+            "balance": 501.19
+          },
+          {
+            "date": "2026-03-05",
+            "description": "COMPRA MB CARTAO ****715* LIDL AGRADECE MONTEMOR",
+            "amount": -8.02,
+            "balance": 531.19
+          },
+          {
+            "date": "2026-03-05",
+            "description": "PAYPAL GFM GOFUNDME 21,00 EUR CARTAO ****715*",
+            "amount": -21,
+            "balance": 539.21
+          },
+          {
+            "date": "2026-03-05",
+            "description": "COMPRA MB CARTAO ****715* PINGO DOCE VAGOS VAGOS",
+            "amount": -23.46,
+            "balance": 560.21
+          },
+          {
+            "date": "2026-03-03",
+            "description": "LEVANTAMENTO MB CARTAO **** 715*",
+            "amount": -30,
+            "balance": 583.67
+          },
+          {
+            "date": "2026-03-03",
+            "description": "COBRANCA SDD SAL CROSSFIT ADC 617",
+            "amount": -55,
+            "balance": 613.67
+          },
+          {
+            "date": "2026-03-03",
+            "description": "COBRANCA SDD METLIFE EUROPE D.A. ADC 00164251031",
+            "amount": -107.12,
+            "balance": 668.67
+          },
+          {
+            "date": "2026-03-02",
+            "description": "TRF IMEDIATA C/CARTAO (MBWAY)-APP PROPRIA P/ NUNO RICARDO PE",
+            "amount": -40.1,
+            "balance": 775.79
+          },
+          {
+            "date": "2026-03-02",
+            "description": "COBRANCA SDD UNICEF Portugal ea ADC 50254878309",
+            "amount": -10,
+            "balance": 815.89
+          },
+          {
+            "date": "2026-03-02",
+            "description": "COMPRA INTERNET CARTAO ****715* DANYANY ALEXANDRE FIG",
+            "amount": -42.21,
+            "balance": 825.89
+          },
+          {
+            "date": "2026-03-02",
+            "description": "SUBSCRICAO DO FUNDO GNB Capital",
+            "amount": -195,
+            "balance": 868.1
+          },
+          {
+            "date": "2026-03-01",
+            "description": "TRANSACAO VISA ORDEM CLIENTE CARTAO ****715* Revolut 5290",
+            "amount": -20,
+            "balance": 1063.1
+          }
+        ]
+      },
+      "lastImportedPeriod": "2026-04"
+    },
+    "d9f9d974-0b52-40d7-b978-a2ba8c2c5b34": {
+      "periods": {
+        "2026-04": [
+          {
+            "date": "2026-04-14",
+            "description": "COMPRA 5504 OPENAI CHATGPT SUBSCR DUBLIN",
+            "amount": -7.99,
+            "balance": 238.75
+          },
+          {
+            "date": "2026-04-14",
+            "description": "COMPRA 5504 Revolut 6843 Dublin IE",
+            "amount": -10,
+            "balance": 246.74
+          },
+          {
+            "date": "2026-04-14",
+            "description": "VIS PAGAMENTO CARTAO DE CREDITO",
+            "amount": -53.22,
+            "balance": 256.74
+          },
+          {
+            "date": "2026-04-13",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -37.5,
+            "balance": 309.96
+          },
+          {
+            "date": "2026-04-08",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -7.6,
+            "balance": 347.46
+          },
+          {
+            "date": "2026-04-08",
+            "description": "DD Prio.E Mobilit PT218856458A63 PT19109102",
+            "amount": -21.08,
+            "balance": 355.06
+          },
+          {
+            "date": "2026-04-08",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -12.99,
+            "balance": 376.14
+          },
+          {
+            "date": "2026-04-08",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -2.99,
+            "balance": 389.13
+          },
+          {
+            "date": "2026-04-07",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -25.65,
+            "balance": 392.12
+          },
+          {
+            "date": "2026-04-07",
+            "description": "DD VODAFONE PORTU 05107509668 PT10100825",
+            "amount": -85.81,
+            "balance": 417.77
+          },
+          {
+            "date": "2026-04-01",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -39.15,
+            "balance": 503.58
+          },
+          {
+            "date": "2026-04-01",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -2.6,
+            "balance": 542.73
+          },
+          {
+            "date": "2026-04-01",
+            "description": "DD SAL CROSSFIT 616 PT92118361",
+            "amount": -55,
+            "balance": 545.33
+          }
+        ],
+        "2026-01": [
+          {
+            "date": "2026-01-29",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -3.99,
+            "balance": 1254.72
+          },
+          {
+            "date": "2026-01-28",
+            "description": "DD BMW BANK GMBH 04034242969 PT12100886",
+            "amount": -169.96,
+            "balance": 1258.71
+          },
+          {
+            "date": "2026-01-28",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -21.95,
+            "balance": 1428.67
+          },
+          {
+            "date": "2026-01-27",
+            "description": "COMPRA 5504 EUPAGO - INST DE PORTO",
+            "amount": -11.5,
+            "balance": 1450.62
+          },
+          {
+            "date": "2026-01-27",
+            "description": "COMPRA 5504 EUPAGO - INST DE PORTO",
+            "amount": -11.5,
+            "balance": 1462.12
+          },
+          {
+            "date": "2026-01-26",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -24.99,
+            "balance": 1473.62
+          },
+          {
+            "date": "2026-01-26",
+            "description": "COMPRA 5504 PAYSHOP PORTUGAL SA 1643-001 LISBOA",
+            "amount": -20,
+            "balance": 1498.61
+          },
+          {
+            "date": "2026-01-23",
+            "description": "REFORCO DEP PRAZO 3433398809",
+            "amount": -8,
+            "balance": 1518.61
+          },
+          {
+            "date": "2026-01-23",
+            "description": "TRF. P/O PAULO SANCHO BERNARDO TRINDADE",
+            "amount": 8,
+            "balance": 1526.61
+          },
+          {
+            "date": "2026-01-23",
+            "description": "TRF P/ Joana Monteiro",
+            "amount": -500,
+            "balance": 1518.61
+          },
+          {
+            "date": "2026-01-23",
+            "description": "TRANSFERENCIA - VENCIMENTO",
+            "amount": 1882.67,
+            "balance": 2018.61
+          },
+          {
+            "date": "2026-01-22",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -28.05,
+            "balance": 135.94
+          },
+          {
+            "date": "2026-01-21",
+            "description": "IMPOSTO IRS/IRC DEPOSITO PRAZO 3496673364",
+            "amount": -0.35,
+            "balance": 163.99
+          },
+          {
+            "date": "2026-01-21",
+            "description": "JUROS DEPOSITO A PRAZO",
+            "amount": 1.25,
+            "balance": 164.34
+          },
+          {
+            "date": "2026-01-20",
+            "description": "DD Generali Tranq 99114341036 PT18100002",
+            "amount": -59.4,
+            "balance": 163.09
+          },
+          {
+            "date": "2026-01-19",
+            "description": "PAGSERV INSTITUTO REGISTOS NOT 11796/548983511",
+            "amount": -29.8,
+            "balance": 222.49
+          },
+          {
+            "date": "2026-01-19",
+            "description": "PAGSERV INSTITUTO REGISTOS NOT 11796/548981919",
+            "amount": -29.8,
+            "balance": 252.29
+          },
+          {
+            "date": "2026-01-19",
+            "description": "PAGSERV INSTITUTO REGISTOS NOT 11796/548980077",
+            "amount": -29.8,
+            "balance": 282.09
+          },
+          {
+            "date": "2026-01-16",
+            "description": "COMPRA 5504 CIPEF BRENHA",
+            "amount": -37.47,
+            "balance": 311.89
+          },
+          {
+            "date": "2026-01-15",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -11.9,
+            "balance": 349.36
+          },
+          {
+            "date": "2026-01-13",
+            "description": "COMPRA 5504 REPSOL E1098 PORTO MOS CONTACTLESS",
+            "amount": -6.26,
+            "balance": 361.26
+          },
+          {
+            "date": "2026-01-13",
+            "description": "VIS PAGAMENTO CARTAO DE CREDITO",
+            "amount": -239.83,
+            "balance": 367.52
+          },
+          {
+            "date": "2026-01-12",
+            "description": "REFORCO DEP PRAZO 3433398809",
+            "amount": -250,
+            "balance": 607.35
+          },
+          {
+            "date": "2026-01-12",
+            "description": "TRF. P/O SOLANCIS SOCIEDADE EXPLORAD ATSIRE01F",
+            "amount": 250,
+            "balance": 857.35
+          },
+          {
+            "date": "2026-01-12",
+            "description": "REFORCO DEP PRAZO 3433398809",
+            "amount": -350,
+            "balance": 607.35
+          },
+          {
+            "date": "2026-01-12",
+            "description": "TRF. P/O SAULO EMANUEL SANTOS OLIVEIRA",
+            "amount": 350,
+            "balance": 957.35
+          },
+          {
+            "date": "2026-01-09",
+            "description": "REFORCO DEP PRAZO 3433398809",
+            "amount": -850,
+            "balance": 607.35
+          },
+          {
+            "date": "2026-01-09",
+            "description": "TRF. P/O TERMAS S VICENTE SOC EXPL H,SA",
+            "amount": 750,
+            "balance": 1457.35
+          },
+          {
+            "date": "2026-01-09",
+            "description": "DD VODAFONE PORTU 05107509668 PT10100825",
+            "amount": -79.55,
+            "balance": 707.35
+          },
+          {
+            "date": "2026-01-09",
+            "description": "COMPRA 5504 RNE LISBOA",
+            "amount": -3.95,
+            "balance": 786.9
+          },
+          {
+            "date": "2026-01-08",
+            "description": "COMPRA 5504 PAYSHOP PORTUGAL SA 1643-001 LISBOA",
+            "amount": -20,
+            "balance": 790.85
+          },
+          {
+            "date": "2026-01-07",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -24.62,
+            "balance": 810.85
+          },
+          {
+            "date": "2026-01-07",
+            "description": "DD UNIVERSO 70165549616 PT24113086",
+            "amount": -131.16,
+            "balance": 835.47
+          },
+          {
+            "date": "2026-01-07",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -2.99,
+            "balance": 966.63
+          },
+          {
+            "date": "2026-01-06",
+            "description": "DD Prio.E Mobilit PT218856458A63 PT19109102",
+            "amount": -24.05,
+            "balance": 969.62
+          },
+          {
+            "date": "2026-01-06",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -25.99,
+            "balance": 993.67
+          },
+          {
+            "date": "2026-01-06",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -12.99,
+            "balance": 1019.66
+          },
+          {
+            "date": "2026-01-05",
+            "description": "REFORCO DEP PRAZO 3433398809",
+            "amount": -300,
+            "balance": 1032.65
+          },
+          {
+            "date": "2026-01-02",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -11.4,
+            "balance": 1332.65
+          },
+          {
+            "date": "2026-01-02",
+            "description": "DD SAL CROSSFIT Nuno Leal PT92118361",
+            "amount": -70,
+            "balance": 1344.05
+          }
+        ],
+        "2026-03": [
+          {
+            "date": "2026-03-31",
+            "description": "COMPRA 5504 Revolut 6843 Dublin IE",
+            "amount": -10,
+            "balance": 600.33
+          },
+          {
+            "date": "2026-03-31",
+            "description": "DD VIA DIRECTA CO 20001858951 PT44100795",
+            "amount": -450.82,
+            "balance": 610.33
+          },
+          {
+            "date": "2026-03-30",
+            "description": "COMPRA 5504 PAYSHOP PORTUGAL SA 1643-001 LISBOA",
+            "amount": -20,
+            "balance": 1061.15
+          },
+          {
+            "date": "2026-03-30",
+            "description": "DD BMW BANK GMBH 04034242969 PT12100886",
+            "amount": -169.96,
+            "balance": 1081.15
+          },
+          {
+            "date": "2026-03-30",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -21.95,
+            "balance": 1251.11
+          },
+          {
+            "date": "2026-03-27",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -29.6,
+            "balance": 1273.06
+          },
+          {
+            "date": "2026-03-27",
+            "description": "TRF. P/O MIGUEL JOSE FRAZAO EUSEBIO",
+            "amount": 30,
+            "balance": 1302.66
+          },
+          {
+            "date": "2026-03-27",
+            "description": "TRF. P/O DRA JOANA MARTINHO MONTEIRO",
+            "amount": 113.3,
+            "balance": 1272.66
+          },
+          {
+            "date": "2026-03-25",
+            "description": "REFORCO DEP PRAZO 3433398809",
+            "amount": -55,
+            "balance": 1159.36
+          },
+          {
+            "date": "2026-03-25",
+            "description": "COMPRA 5504 Revolut 6843 Dublin IE",
+            "amount": -20,
+            "balance": 1214.36
+          },
+          {
+            "date": "2026-03-24",
+            "description": "REFORCO DEP PRAZO 3433398809",
+            "amount": -200,
+            "balance": 1234.36
+          },
+          {
+            "date": "2026-03-24",
+            "description": "TRF P/ Joana Monteiro",
+            "amount": -500,
+            "balance": 1434.36
+          },
+          {
+            "date": "2026-03-24",
+            "description": "COMPRA 5504 Revolut 6843 Dublin IE",
+            "amount": -20,
+            "balance": 1934.36
+          },
+          {
+            "date": "2026-03-24",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -39.99,
+            "balance": 1954.36
+          },
+          {
+            "date": "2026-03-23",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -31,
+            "balance": 1994.35
+          },
+          {
+            "date": "2026-03-23",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -8.35,
+            "balance": 2025.35
+          },
+          {
+            "date": "2026-03-23",
+            "description": "IMPOSTO IRS/IRC DEPOSITO PRAZO 3496673364",
+            "amount": -0.12,
+            "balance": 2033.7
+          },
+          {
+            "date": "2026-03-23",
+            "description": "JUROS DEPOSITO A PRAZO",
+            "amount": 0.42,
+            "balance": 2033.82
+          },
+          {
+            "date": "2026-03-23",
+            "description": "REFORCO DEP PRAZO 3433398809",
+            "amount": -100,
+            "balance": 2033.4
+          },
+          {
+            "date": "2026-03-23",
+            "description": "TRANSFERENCIA - VENCIMENTO",
+            "amount": 1931.83,
+            "balance": 2133.4
+          },
+          {
+            "date": "2026-03-20",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -34.1,
+            "balance": 201.57
+          },
+          {
+            "date": "2026-03-17",
+            "description": "COMPRA 5504 LEROY MERLIN LEIRIA LEI CONTACTLESS",
+            "amount": -16.97,
+            "balance": 235.67
+          },
+          {
+            "date": "2026-03-17",
+            "description": "COMPRA 5504 LUDIMUSIC MOVEL 2 TURQU CONTACTLESS",
+            "amount": -14.45,
+            "balance": 252.64
+          },
+          {
+            "date": "2026-03-16",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -2,
+            "balance": 267.09
+          },
+          {
+            "date": "2026-03-13",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -36.25,
+            "balance": 269.09
+          },
+          {
+            "date": "2026-03-13",
+            "description": "COMPRA 5504 FARMACIA SAUDE LDA TAVA CONTACTLESS",
+            "amount": -12.95,
+            "balance": 305.34
+          },
+          {
+            "date": "2026-03-13",
+            "description": "COMPRA 5504 PAYSHOP PORTUGAL SA 1643-001 LISBOA",
+            "amount": -20,
+            "balance": 318.29
+          },
+          {
+            "date": "2026-03-12",
+            "description": "COMPRA 5504 Revolut 6843 Dublin IE",
+            "amount": -10,
+            "balance": 338.29
+          },
+          {
+            "date": "2026-03-12",
+            "description": "VIS PAGAMENTO CARTAO DE CREDITO",
+            "amount": -184.99,
+            "balance": 348.29
+          },
+          {
+            "date": "2026-03-11",
+            "description": "DEP NUM MTM9483 lavnl",
+            "amount": 310,
+            "balance": 533.28
+          },
+          {
+            "date": "2026-03-10",
+            "description": "TRF MB WAY P/ SAULO EMANUEL SANTOS OLIVEIRA SAC",
+            "amount": -228,
+            "balance": 223.28
+          },
+          {
+            "date": "2026-03-09",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -35.45,
+            "balance": 451.28
+          },
+          {
+            "date": "2026-03-09",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -10.75,
+            "balance": 486.73
+          },
+          {
+            "date": "2026-03-09",
+            "description": "DD VODAFONE PORTU 05107509668 PT10100825",
+            "amount": -85.81,
+            "balance": 497.48
+          },
+          {
+            "date": "2026-03-09",
+            "description": "TRF MB WAY P/ JOANA M MONTEIRO",
+            "amount": -40,
+            "balance": 583.29
+          },
+          {
+            "date": "2026-03-09",
+            "description": "DEP NUM MTM9483 lavnl",
+            "amount": 330,
+            "balance": 623.29
+          },
+          {
+            "date": "2026-03-06",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -12.99,
+            "balance": 293.29
+          },
+          {
+            "date": "2026-03-06",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -2.99,
+            "balance": 306.28
+          },
+          {
+            "date": "2026-03-05",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -21.6,
+            "balance": 309.27
+          },
+          {
+            "date": "2026-03-04",
+            "description": "TRF MB WAY P/ PAULO JACINTO CORREIA ALMEIDA",
+            "amount": -6,
+            "balance": 330.87
+          },
+          {
+            "date": "2026-03-03",
+            "description": "DD SAL CROSSFIT 616 PT92118361",
+            "amount": -55,
+            "balance": 336.87
+          },
+          {
+            "date": "2026-03-02",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -20.15,
+            "balance": 391.87
+          },
+          {
+            "date": "2026-03-02",
+            "description": "TRF. P/O DRA JOANA MARTINHO MONTEIRO",
+            "amount": 40.1,
+            "balance": 412.02
+          },
+          {
+            "date": "2026-03-02",
+            "description": "COMPRA 5504 PAYSHOP PORTUGAL SA 1643-001 LISBOA",
+            "amount": -20,
+            "balance": 371.92
+          },
+          {
+            "date": "2026-03-02",
+            "description": "COMPRA 5504 Revolut 6843 Dublin IE",
+            "amount": -20,
+            "balance": 391.92
+          },
+          {
+            "date": "2026-03-02",
+            "description": "DD BMW BANK GMBH 04034242969 PT12100886",
+            "amount": -169.96,
+            "balance": 411.92
+          },
+          {
+            "date": "2026-03-02",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -21.95,
+            "balance": 581.88
+          },
+          {
+            "date": "2026-03-02",
+            "description": "COMPRA 5504 EST SERVICO AUCHAN ENERGY SA FIGFIG",
+            "amount": -50.01,
+            "balance": 603.83
+          }
+        ],
+        "2026-02": [
+          {
+            "date": "2026-02-27",
+            "description": "TRF. P/O DRA BELA LUCIA DA SILVA SIMOES",
+            "amount": 45,
+            "balance": 653.84
+          },
+          {
+            "date": "2026-02-27",
+            "description": "COMPRA 5504 SPECAUTO UNIP LDA JARDO CONTACTLESS",
+            "amount": -161.23,
+            "balance": 608.84
+          },
+          {
+            "date": "2026-02-27",
+            "description": "TRF MB WAY P/ JOANA M MONTEIRO",
+            "amount": -195,
+            "balance": 770.07
+          },
+          {
+            "date": "2026-02-27",
+            "description": "TRF. P/O DENER LUIZ CELINI",
+            "amount": 195,
+            "balance": 965.07
+          },
+          {
+            "date": "2026-02-24",
+            "description": "TRF. P/O DRA JOANA MARTINHO MONTEIRO",
+            "amount": 23.55,
+            "balance": 770.07
+          },
+          {
+            "date": "2026-02-24",
+            "description": "TRF P/ Joana Monteiro",
+            "amount": -500,
+            "balance": 746.52
+          },
+          {
+            "date": "2026-02-24",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -24.99,
+            "balance": 1246.52
+          },
+          {
+            "date": "2026-02-23",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -1.6,
+            "balance": 1271.51
+          },
+          {
+            "date": "2026-02-23",
+            "description": "TRF P/ LUBRIGAZ S A",
+            "amount": -1156.74,
+            "balance": 1273.11
+          },
+          {
+            "date": "2026-02-23",
+            "description": "VIS PAGAMENTO CARTAO CREDITO",
+            "amount": -200,
+            "balance": 2429.85
+          },
+          {
+            "date": "2026-02-23",
+            "description": "TRF. P/O DRA JOANA MARTINHO MONTEIRO",
+            "amount": 200,
+            "balance": 2629.85
+          },
+          {
+            "date": "2026-02-23",
+            "description": "TRANSFERENCIA - VENCIMENTO",
+            "amount": 1979.19,
+            "balance": 2429.85
+          },
+          {
+            "date": "2026-02-23",
+            "description": "VIS PAGAMENTO CARTAO CREDITO",
+            "amount": -800,
+            "balance": 450.66
+          },
+          {
+            "date": "2026-02-23",
+            "description": "TRF. P/O DRA JOANA MARTINHO MONTEIRO",
+            "amount": 800,
+            "balance": 1250.66
+          },
+          {
+            "date": "2026-02-20",
+            "description": "IMPOSTO IRS/IRC DEPOSITO PRAZO 3433398809",
+            "amount": -16.8,
+            "balance": 450.66
+          },
+          {
+            "date": "2026-02-20",
+            "description": "IMPOSTO IRS/IRC DEPOSITO PRAZO 3496673364",
+            "amount": -0.12,
+            "balance": 467.46
+          },
+          {
+            "date": "2026-02-20",
+            "description": "JUROS DEPOSITO A PRAZO",
+            "amount": 59.99,
+            "balance": 467.58
+          },
+          {
+            "date": "2026-02-20",
+            "description": "JUROS DEPOSITO A PRAZO",
+            "amount": 0.42,
+            "balance": 407.59
+          },
+          {
+            "date": "2026-02-20",
+            "description": "COMPRA 5504 BCM BRICOLAGE SA FIGUEI CONTACTLESS",
+            "amount": -17.15,
+            "balance": 407.17
+          },
+          {
+            "date": "2026-02-19",
+            "description": "CRED. 5504 YOU GET LEIRIA",
+            "amount": 3.3,
+            "balance": 424.32
+          },
+          {
+            "date": "2026-02-18",
+            "description": "TRF. P/O MARIA CONCEICAO SIMOES MARTINHO MONTE",
+            "amount": 17,
+            "balance": 421.02
+          },
+          {
+            "date": "2026-02-18",
+            "description": "COMPRA 5504 YOU GET LEIRIA",
+            "amount": -22,
+            "balance": 404.02
+          },
+          {
+            "date": "2026-02-16",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -4.45,
+            "balance": 426.02
+          },
+          {
+            "date": "2026-02-16",
+            "description": "TRF MB WAY P/ ANDRE LOMBA",
+            "amount": -25,
+            "balance": 430.47
+          },
+          {
+            "date": "2026-02-13",
+            "description": "PayPal Europe S.a.r.l. et Cie S.C.A",
+            "amount": 3.99,
+            "balance": 455.47
+          },
+          {
+            "date": "2026-02-13",
+            "description": "PayPal Europe S.a.r.l. et Cie S.C.A",
+            "amount": 24.99,
+            "balance": 451.48
+          },
+          {
+            "date": "2026-02-12",
+            "description": "VIS PAGAMENTO CARTAO DE CREDITO",
+            "amount": -191.84,
+            "balance": 426.49
+          },
+          {
+            "date": "2026-02-09",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -8.9,
+            "balance": 618.33
+          },
+          {
+            "date": "2026-02-09",
+            "description": "REFORCO DEP PRAZO 3433398809",
+            "amount": -150,
+            "balance": 627.23
+          },
+          {
+            "date": "2026-02-09",
+            "description": "TRF. P/O ISABEL CRISTINA AVEIRO MARTINHO DA SI",
+            "amount": 150,
+            "balance": 777.23
+          },
+          {
+            "date": "2026-02-09",
+            "description": "COMPRA 5504 PAYSHOP PORTUGAL SA 1643-001 LISBOA",
+            "amount": -20,
+            "balance": 627.23
+          },
+          {
+            "date": "2026-02-06",
+            "description": "REFORCO DEP PRAZO 3433398809",
+            "amount": -200,
+            "balance": 647.23
+          },
+          {
+            "date": "2026-02-06",
+            "description": "REFORCO DEP PRAZO 3433398809",
+            "amount": -200,
+            "balance": 847.23
+          },
+          {
+            "date": "2026-02-06",
+            "description": "TRF. P/O DRA JOANA MARTINHO MONTEIRO",
+            "amount": 110,
+            "balance": 1047.23
+          },
+          {
+            "date": "2026-02-06",
+            "description": "COMPRA 5504 PINGO DOCE FIG FOZ T FI CONTACTLESS",
+            "amount": -0.3,
+            "balance": 937.23
+          },
+          {
+            "date": "2026-02-06",
+            "description": "COMPRA 5504 PINGO DOCE FIG FOZ T FI CONTACTLESS",
+            "amount": -7.24,
+            "balance": 937.53
+          },
+          {
+            "date": "2026-02-06",
+            "description": "COMPRA 5504 MERCADONA FIGUEIRA DA F CONTACTLESS",
+            "amount": -13,
+            "balance": 944.77
+          },
+          {
+            "date": "2026-02-06",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -12.99,
+            "balance": 957.77
+          },
+          {
+            "date": "2026-02-06",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -2.99,
+            "balance": 970.76
+          },
+          {
+            "date": "2026-02-05",
+            "description": "PAG BXVAL- 5504 VIAVERDE",
+            "amount": -10.2,
+            "balance": 973.75
+          },
+          {
+            "date": "2026-02-05",
+            "description": "DD PayPal Europe 5VU22252UKL5N LU960000000000",
+            "amount": -27.6,
+            "balance": 983.95
+          },
+          {
+            "date": "2026-02-04",
+            "description": "DD VODAFONE PORTU 05107509668 PT10100825",
+            "amount": -84.32,
+            "balance": 1011.55
+          },
+          {
+            "date": "2026-02-03",
+            "description": "COMPRA 5504 EST SERVICO AUCHAN ENERGY SA FIG FI",
+            "amount": -35,
+            "balance": 1095.87
+          }
+        ]
+      },
+      "lastImportedPeriod": "2026-04"
+    },
+    "d71100fb-41e1-482b-9cec-9e5926ccf61b": {
+      "periods": {
+        "2026-04": [
+          {
+            "date": "2026-04-02",
+            "description": "Cofre Casa",
+            "amount": -300,
+            "balance": 2200
+          }
+        ],
+        "2026-01": [
+          {
+            "date": "2026-02-02",
+            "description": "Cofre Casa",
+            "amount": 0,
+            "balance": 6300
+          }
+        ],
+        "2026-02": [
+          {
+            "date": "2026-02-02",
+            "description": "Cofre Casa",
+            "amount": -3400,
+            "balance": 2900
+          }
+        ],
+        "2026-03": [
+          {
+            "date": "2026-03-02",
+            "description": "Cofre Casa",
+            "amount": -400,
+            "balance": 2500
+          }
+        ]
+      },
+      "lastImportedPeriod": "2026-04"
+    }
+  },
+  "activityLog": [
+    {
+      "id": "b2652996-730a-4f07-a948-58a1fe447c6a",
+      "timestamp": "2026-04-20T07:59:48.095Z",
+      "title": "Acompanhamento copiado",
+      "description": "Novo Banco: 5 regras com palavra-chave de março de 2026 foram copiadas para abril de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "510f9b73-adf1-498b-99f5-e90bbc3c1cac",
+      "timestamp": "2026-04-20T07:59:46.668Z",
+      "title": "Despesa recorrente apagada",
+      "description": "Novo Banco: Prestação Cozinha foi removida de abril de 2026."
+    },
+    {
+      "id": "58d288c7-9ddf-4eab-bf45-c64c9538152b",
+      "timestamp": "2026-04-20T07:59:46.425Z",
+      "title": "Despesa recorrente apagada",
+      "description": "Novo Banco: Prestação Casa Alhadas foi removida de abril de 2026."
+    },
+    {
+      "id": "424246df-b6f2-41cc-9cf1-0a9b43728756",
+      "timestamp": "2026-04-20T07:59:46.191Z",
+      "title": "Despesa recorrente apagada",
+      "description": "Novo Banco: Prestação Casa foi removida de abril de 2026."
+    },
+    {
+      "id": "cdc4d05d-733e-452a-b59b-a71b31297bc7",
+      "timestamp": "2026-04-20T07:59:45.962Z",
+      "title": "Despesa recorrente apagada",
+      "description": "Novo Banco: Água foi removida de abril de 2026."
+    },
+    {
+      "id": "bcac5f04-302a-4cc6-9f2c-66ff02fd122f",
+      "timestamp": "2026-04-20T07:59:45.746Z",
+      "title": "Despesa recorrente apagada",
+      "description": "Novo Banco: EDP foi removida de abril de 2026."
+    },
+    {
+      "id": "4531accf-33de-4dd2-a583-0751dacc89b3",
+      "timestamp": "2026-04-20T07:59:45.557Z",
+      "title": "Despesa recorrente apagada",
+      "description": "Novo Banco: Condomínio foi removida de abril de 2026."
+    },
+    {
+      "id": "94686296-9a47-40a4-8b75-76d788da1672",
+      "timestamp": "2026-04-20T07:59:45.292Z",
+      "title": "Despesa recorrente apagada",
+      "description": "Novo Banco: EDP foi removida de abril de 2026."
+    },
+    {
+      "id": "8e937070-e6cd-4f9f-a3a6-46e46ecd4f9e",
+      "timestamp": "2026-04-20T07:59:44.883Z",
+      "title": "Despesa recorrente apagada",
+      "description": "Novo Banco: Lusitaniagás foi removida de abril de 2026."
+    },
+    {
+      "id": "09870327-cbf1-4ce5-94f1-db26d44b307b",
+      "timestamp": "2026-04-20T07:59:37.358Z",
+      "title": "Acompanhamento copiado",
+      "description": "Novo Banco: 5 regras com palavra-chave de março de 2026 foram copiadas para abril de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "2ad8a788-030d-4fb1-b24c-432ee521129f",
+      "timestamp": "2026-04-20T07:59:29.109Z",
+      "title": "Acompanhamento copiado",
+      "description": "Novo Banco: 1 regras com palavra-chave de fevereiro de 2026 foram copiadas para março de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "b4c5b5db-bfd3-40e7-9061-12cc90ff81a6",
+      "timestamp": "2026-04-16T20:18:19.868Z",
+      "title": "Backup exportado",
+      "description": "Dados exportados com o ficheiro GestãofinanceiraNL-20260416-211819.json."
+    },
+    {
+      "id": "8ddbc7e3-f59c-4584-b377-b30f55053709",
+      "timestamp": "2026-04-16T20:16:37.526Z",
+      "title": "Extrato importado",
+      "description": "Cofre Casa: 1 movimentos importados para abril de 2026."
+    },
+    {
+      "id": "7c98a446-bbde-458d-80ee-94c527b1a619",
+      "timestamp": "2026-04-16T20:16:04.629Z",
+      "title": "Extrato importado",
+      "description": "Cofre Casa: 1 movimentos importados para março de 2026."
+    },
+    {
+      "id": "8ad4e119-1a60-4461-b181-1b5f4ab79110",
+      "timestamp": "2026-04-16T20:15:25.835Z",
+      "title": "Extrato importado",
+      "description": "Cofre Casa: 1 movimentos importados para fevereiro de 2026."
+    },
+    {
+      "id": "81ae21fb-3ad6-4de0-839a-664c04fba59d",
+      "timestamp": "2026-04-16T20:14:29.718Z",
+      "title": "Extrato importado",
+      "description": "Cofre Casa: 1 movimentos importados para janeiro de 2026."
+    },
+    {
+      "id": "5f42496f-a973-49bb-945f-82f7b22d2184",
+      "timestamp": "2026-04-16T20:13:22.598Z",
+      "title": "Extrato importado",
+      "description": "Cofre Casa: 1 movimentos importados para janeiro de 2026."
+    },
+    {
+      "id": "2fc72eae-6ddb-4f5f-a4cf-afd18f9cea05",
+      "timestamp": "2026-04-16T20:11:32.130Z",
+      "title": "Extrato importado",
+      "description": "Cofre Casa: 1 movimentos importados para janeiro de 2026."
+    },
+    {
+      "id": "5db2ffa2-e5e0-4cb0-92dc-6236145fab89",
+      "timestamp": "2026-04-16T20:08:54.778Z",
+      "title": "Extrato importado",
+      "description": "Cofre Casa: 0 movimentos importados para janeiro de 2026."
+    },
+    {
+      "id": "d9ade5b0-cb5f-4390-830c-c93af94268fd",
+      "timestamp": "2026-04-16T20:08:42.672Z",
+      "title": "Extrato importado",
+      "description": "Cofre Casa: 0 movimentos importados para abril de 2026."
+    },
+    {
+      "id": "bcc2a0e9-1c29-4a31-99e7-32d40fb3a2a4",
+      "timestamp": "2026-04-16T20:07:50.184Z",
+      "title": "Extrato importado",
+      "description": "Cofre Casa: 0 movimentos importados para abril de 2026."
+    },
+    {
+      "id": "df6995fd-3580-4fb0-abf4-11d77b9ba737",
+      "timestamp": "2026-04-16T20:06:29.720Z",
+      "title": "Conta editada",
+      "description": "Os dados visuais da conta Cofre Casa foram atualizados."
+    },
+    {
+      "id": "5e644596-368d-4a7f-a654-743c7dcbe497",
+      "timestamp": "2026-04-16T20:04:14.749Z",
+      "title": "Ordem das contas atualizada",
+      "description": "A posição dos banners das contas foi alterada."
+    },
+    {
+      "id": "56145651-bb41-45af-b1ac-57480bb145c8",
+      "timestamp": "2026-04-16T20:04:12.484Z",
+      "title": "Ordem das contas atualizada",
+      "description": "A posição dos banners das contas foi alterada."
+    },
+    {
+      "id": "d091fa75-4db2-4ae7-835e-0fc8a32ae085",
+      "timestamp": "2026-04-16T20:04:03.092Z",
+      "title": "Conta criada",
+      "description": "Cofre Casa foi adicionada à página principal."
+    },
+    {
+      "id": "ccfeb44b-8d5f-4c47-9599-ae8158252fb2",
+      "timestamp": "2026-04-16T19:45:06.511Z",
+      "title": "Backup exportado",
+      "description": "Dados exportados com o ficheiro GestãofinanceiraNL-20260416-204506.json."
+    },
+    {
+      "id": "5b212d5a-0db4-42b9-862a-6ac422564bd2",
+      "timestamp": "2026-04-16T19:32:17.688Z",
+      "title": "Acompanhamento copiado",
+      "description": "ActivoBank: 1 regras com palavra-chave de março de 2026 foram copiadas para abril de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "2c87a280-1b94-4e75-a209-4903fd2ddc72",
+      "timestamp": "2026-04-16T19:32:03.529Z",
+      "title": "Acompanhamento copiado",
+      "description": "ActivoBank: 1 regras com palavra-chave de fevereiro de 2026 foram copiadas para março de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "64dbacec-8e18-41d8-bd6d-3c0f26128a7d",
+      "timestamp": "2026-04-16T19:31:57.514Z",
+      "title": "Acompanhamento copiado",
+      "description": "ActivoBank: 1 regras com palavra-chave de janeiro de 2026 foram copiadas para fevereiro de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "121b838a-05b9-4708-8ec6-bc6776583a54",
+      "timestamp": "2026-04-16T19:31:46.091Z",
+      "title": "Entrada de acompanhamento criada",
+      "description": "ActivoBank: Cartão de Crédito ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "a25c7385-8e3b-4a48-b600-9d110cd9d577",
+      "timestamp": "2026-04-15T20:12:03.566Z",
+      "title": "Backup exportado",
+      "description": "Dados exportados com o ficheiro GestãofinanceiraNL-20260415-211203.json."
+    },
+    {
+      "id": "1ae6d4ba-eee2-447e-9d13-d1a8c75119f6",
+      "timestamp": "2026-04-15T19:57:04.425Z",
+      "title": "Backup exportado",
+      "description": "Dados exportados com o ficheiro GestãofinanceiraNL-20260415-205704.json."
+    },
+    {
+      "id": "215250e9-20d1-4b9f-8f03-6118d111ac49",
+      "timestamp": "2026-04-15T19:56:35.118Z",
+      "title": "Acompanhamento copiado",
+      "description": "ActivoBank: 5 regras com palavra-chave de março de 2026 foram copiadas para abril de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "757d4e7c-6feb-4ee6-96e3-af78b3845785",
+      "timestamp": "2026-04-15T19:56:31.596Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Prio - Mobilidade Elétrica foi removida de abril de 2026."
+    },
+    {
+      "id": "a4e16c32-ea52-4847-ad17-a29d93ae2e1d",
+      "timestamp": "2026-04-15T19:56:31.141Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Vodafone foi removida de abril de 2026."
+    },
+    {
+      "id": "639acd7a-615f-4ffa-bd8f-c19d38802d0e",
+      "timestamp": "2026-04-15T19:56:30.801Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Via verde foi removida de abril de 2026."
+    },
+    {
+      "id": "5eaa48a9-cd41-4838-9894-4411fb750541",
+      "timestamp": "2026-04-15T19:56:30.467Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: PayPal foi removida de abril de 2026."
+    },
+    {
+      "id": "c1100bba-c6ab-40c1-920d-0c09750906a0",
+      "timestamp": "2026-04-15T19:56:22.550Z",
+      "title": "Acompanhamento copiado",
+      "description": "ActivoBank: 5 regras com palavra-chave de fevereiro de 2026 foram copiadas para março de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "34e2e84e-355b-45fe-9a68-6beee0760101",
+      "timestamp": "2026-04-15T19:56:20.820Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Via Verde foi removida de março de 2026."
+    },
+    {
+      "id": "54373531-44ae-43a0-82d5-578e42202cc2",
+      "timestamp": "2026-04-15T19:56:20.443Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Vodafone foi removida de março de 2026."
+    },
+    {
+      "id": "a8179377-7696-4c18-bf61-3866be0ecfda",
+      "timestamp": "2026-04-15T19:56:20.298Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Prio - Mobilidade Elétrica foi removida de março de 2026."
+    },
+    {
+      "id": "9aabb755-e89e-4d88-be4b-831231d96b50",
+      "timestamp": "2026-04-15T19:56:20.151Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: BMW - Prestação Mota foi removida de março de 2026."
+    },
+    {
+      "id": "4797d28c-0170-4567-8e04-70ce1a0b758a",
+      "timestamp": "2026-04-15T19:56:20.014Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: PayPal foi removida de março de 2026."
+    },
+    {
+      "id": "4a299823-f3a4-49c9-97e9-9584bdee5d91",
+      "timestamp": "2026-04-15T19:56:08.147Z",
+      "title": "Acompanhamento copiado",
+      "description": "ActivoBank: 5 regras com palavra-chave de janeiro de 2026 foram copiadas para fevereiro de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "cc02eca1-187d-405f-94e0-05d053e15fb6",
+      "timestamp": "2026-04-15T19:56:05.822Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Vodafone foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "f9fef552-a34c-4c56-8424-7cb3895cdfc6",
+      "timestamp": "2026-04-15T19:56:05.693Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Prio - Mobilidade Elétrica foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "c131f297-acc7-46cd-a86c-30e36f945313",
+      "timestamp": "2026-04-15T19:56:05.555Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: BMW - Prestação Mota foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "c461f728-4d1b-4673-9c3f-d943686485c8",
+      "timestamp": "2026-04-15T19:56:05.421Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: PayPal foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "d403cdcc-b8da-4570-8977-72d27c18224a",
+      "timestamp": "2026-04-15T19:56:04.480Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Via Verde foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "415708a7-6b22-4fb6-8240-42b714eef6a8",
+      "timestamp": "2026-04-15T19:55:51.534Z",
+      "title": "Acompanhamento copiado",
+      "description": "ActivoBank: 1 regras com palavra-chave de fevereiro de 2026 foram copiadas para março de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "6a7539c7-e8c7-4c09-b081-b00fa1a2b9f4",
+      "timestamp": "2026-04-15T19:55:50.038Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Via Verde foi removida de março de 2026."
+    },
+    {
+      "id": "81f81f6d-b22f-4da9-b9cc-6b46ffec88c9",
+      "timestamp": "2026-04-15T19:55:38.637Z",
+      "title": "Entrada de acompanhamento editada",
+      "description": "ActivoBank: Via Verde ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "fdd3a70e-3552-4dd3-a5cd-02f304794f95",
+      "timestamp": "2026-04-15T19:54:57.851Z",
+      "title": "Acompanhamento copiado",
+      "description": "ActivoBank: 5 regras com palavra-chave de fevereiro de 2026 foram copiadas para março de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "2adb4b55-25b8-40fb-9052-a2c30c0ace31",
+      "timestamp": "2026-04-15T19:54:55.980Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Vodafone foi removida de março de 2026."
+    },
+    {
+      "id": "322cf13c-77bb-4297-a0a1-8bc51b338ff6",
+      "timestamp": "2026-04-15T19:54:55.623Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: PayPal foi removida de março de 2026."
+    },
+    {
+      "id": "50068d43-b4a9-4f6d-9fe5-03f89190c862",
+      "timestamp": "2026-04-15T19:54:55.220Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Pag Bxval- 5504 Viaverde foi removida de março de 2026."
+    },
+    {
+      "id": "b7868656-7456-4e06-a027-68652fb7c5b6",
+      "timestamp": "2026-04-15T19:52:17.377Z",
+      "title": "Entrada de acompanhamento criada",
+      "description": "ActivoBank: Pag Bxval- 5504 Viaverde ficou configurado nos somatórios de março de 2026."
+    },
+    {
+      "id": "60e4540b-f260-41cb-9462-4d462015d831",
+      "timestamp": "2026-04-15T19:52:02.402Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Via Verde foi removida de março de 2026."
+    },
+    {
+      "id": "f6ecc756-55bd-4491-afb4-88d4980237c2",
+      "timestamp": "2026-04-15T19:51:28.225Z",
+      "title": "Backup exportado",
+      "description": "Dados exportados com o ficheiro GestãofinanceiraNL-20260415-205128.json."
+    },
+    {
+      "id": "151f4cad-4662-4293-bf42-d7eb0aeb1335",
+      "timestamp": "2026-04-15T19:49:55.671Z",
+      "title": "Acompanhamento copiado",
+      "description": "ActivoBank: 3 linhas de fevereiro de 2026 foram copiadas para março de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "24c9d267-8898-433f-a6cf-f5a61219fe2d",
+      "timestamp": "2026-04-15T19:49:52.664Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Vodafone foi removida de março de 2026."
+    },
+    {
+      "id": "9551521c-ab81-4aaf-b925-7b6841ee007d",
+      "timestamp": "2026-04-15T19:49:52.373Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Via verde foi removida de março de 2026."
+    },
+    {
+      "id": "606e59f5-30b6-4d36-8f53-8890d1b77d22",
+      "timestamp": "2026-04-15T19:49:52.004Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: PayPal foi removida de março de 2026."
+    },
+    {
+      "id": "1264c9fa-d68b-4d87-970a-9e554beec9d0",
+      "timestamp": "2026-04-15T19:49:22.186Z",
+      "title": "Acompanhamento copiado",
+      "description": "ActivoBank: 5 linhas de janeiro de 2026 foram copiadas para fevereiro de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "e07e1762-d6e0-4aad-a58e-bf4647235679",
+      "timestamp": "2026-04-15T19:49:20.319Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Bmw - F850GS foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "a517619d-2f3a-4e4b-936e-8faa9f669280",
+      "timestamp": "2026-04-15T19:49:20.043Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Prio foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "2696c360-31ee-4b4d-bcfc-188ebf7f64d2",
+      "timestamp": "2026-04-15T19:49:19.782Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Vodafone foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "3af65068-46d2-44b8-96a7-c6b246fe083b",
+      "timestamp": "2026-04-15T19:49:19.556Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Via verde foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "d3832870-6874-4010-a1ab-8b28c2c6d79c",
+      "timestamp": "2026-04-15T19:49:19.190Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: PayPal foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "b0fc632d-a50a-4a75-9574-609c5acf66dc",
+      "timestamp": "2026-04-15T19:48:35.145Z",
+      "title": "Entrada de acompanhamento criada",
+      "description": "ActivoBank: Vodafone ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "06715d40-f70a-4459-b23a-0b9a431e937d",
+      "timestamp": "2026-04-15T19:47:57.695Z",
+      "title": "Entrada de acompanhamento criada",
+      "description": "ActivoBank: Prio - Mobilidade Elétrica ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "5e63903a-0058-4070-80a7-342826e60b11",
+      "timestamp": "2026-04-15T19:47:37.782Z",
+      "title": "Entrada de acompanhamento criada",
+      "description": "ActivoBank: BMW - Prestação Mota ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "9f979233-6c47-42e0-8d87-cb9acb002f44",
+      "timestamp": "2026-04-15T19:47:16.049Z",
+      "title": "Entrada de acompanhamento criada",
+      "description": "ActivoBank: PayPal ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "0c71404b-ddef-4d92-b2e7-d934a431d0a0",
+      "timestamp": "2026-04-15T19:46:49.521Z",
+      "title": "Entrada de acompanhamento criada",
+      "description": "ActivoBank: Via Verde ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "42ef5af6-b2e3-43b0-84eb-c044ecf2a031",
+      "timestamp": "2026-04-15T19:46:27.477Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Bmw - F850GS foi removida de janeiro de 2026."
+    },
+    {
+      "id": "bf0cf51c-d0ca-4bb3-ae6a-bba006642be2",
+      "timestamp": "2026-04-15T19:46:27.063Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Prio foi removida de janeiro de 2026."
+    },
+    {
+      "id": "2df6dc60-fba4-4cd3-82d1-95c098b772f8",
+      "timestamp": "2026-04-15T19:46:26.689Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Vodafone foi removida de janeiro de 2026."
+    },
+    {
+      "id": "70511cf8-741a-4969-a39c-84c0a7f9463c",
+      "timestamp": "2026-04-15T19:46:26.350Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Via verde foi removida de janeiro de 2026."
+    },
+    {
+      "id": "1060a0c7-a39a-40a2-8e64-ed82b6421530",
+      "timestamp": "2026-04-15T19:46:25.921Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: PayPal foi removida de janeiro de 2026."
+    },
+    {
+      "id": "f2818034-cc88-4d1f-82f8-3ba4a69c27e6",
+      "timestamp": "2026-04-15T18:38:02.406Z",
+      "title": "Despesa recorrente apagada",
+      "description": "Novo Banco: Lusitaniagás foi removida de abril de 2026."
+    },
+    {
+      "id": "3850ce6d-c096-4773-941f-a82eb5136067",
+      "timestamp": "2026-04-15T18:37:42.493Z",
+      "title": "Entrada de acompanhamento criada",
+      "description": "Novo Banco: Lusitaniagás ficou configurado nos somatórios de abril de 2026."
+    },
+    {
+      "id": "05d5afda-392a-47d1-9d11-bf8b9627f132",
+      "timestamp": "2026-04-15T18:36:55.083Z",
+      "title": "Extrato importado",
+      "description": "Novo Banco: 22 movimentos importados para abril de 2026."
+    },
+    {
+      "id": "55f24d2d-3aa8-4c38-ad89-aad9cb52dc0c",
+      "timestamp": "2026-04-15T18:32:37.983Z",
+      "title": "Backup exportado",
+      "description": "Dados exportados com o ficheiro GestãofinanceiraNL-20260415-193237.json."
+    },
+    {
+      "id": "394c0851-961d-4721-943b-48597007104c",
+      "timestamp": "2026-04-15T18:29:55.670Z",
+      "title": "Produto financeiro editado",
+      "description": "ActivoBank: Poupança- Cofre - 20/02/2026 foi atualizado em março de 2026."
+    },
+    {
+      "id": "626e7395-e291-4d3b-9b85-f23f3a7f8724",
+      "timestamp": "2026-04-15T18:29:35.081Z",
+      "title": "Produto financeiro editado",
+      "description": "ActivoBank: Poupança- Cofre - 20/02/2026 foi atualizado em janeiro de 2026."
+    },
+    {
+      "id": "2d12996e-0067-4943-ab68-4ba2ead81995",
+      "timestamp": "2026-04-15T18:29:22.757Z",
+      "title": "Produto financeiro editado",
+      "description": "ActivoBank: Poupança- Cofre - 20/02/2026 foi atualizado em fevereiro de 2026."
+    },
+    {
+      "id": "989aae6b-8b89-4514-9fae-cb34477d3b6c",
+      "timestamp": "2026-04-15T18:27:58.243Z",
+      "title": "Acompanhamento copiado",
+      "description": "ActivoBank: 1 linhas de janeiro de 2026 foram copiadas para fevereiro de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "a9ebdf4d-2323-4f17-9771-ba9c21a064f2",
+      "timestamp": "2026-04-15T18:27:36.312Z",
+      "title": "Entrada de acompanhamento criada",
+      "description": "ActivoBank: Bmw - F850GS ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "c7c92d44-abdc-4e33-bd0b-2308257ca560",
+      "timestamp": "2026-04-15T15:44:46.929Z",
+      "title": "Produto financeiro editado",
+      "description": "ActivoBank: PPR - Activo foi atualizado em abril de 2026."
+    },
+    {
+      "id": "b73cc1e4-1c18-4c04-9308-070de45c26ca",
+      "timestamp": "2026-04-15T15:39:12.447Z",
+      "title": "Extrato importado",
+      "description": "ActivoBank: 13 movimentos importados para abril de 2026."
+    },
+    {
+      "id": "f53680d3-c0f5-465d-a30b-2e949dc45122",
+      "timestamp": "2026-04-15T15:37:59.179Z",
+      "title": "Backup exportado",
+      "description": "Dados exportados com o ficheiro GestãofinanceiraNL-20260415-163759.json."
+    },
+    {
+      "id": "325cd66a-038c-4558-b359-8b78ec70fa71",
+      "timestamp": "2026-04-15T15:30:31.378Z",
+      "title": "Acompanhamento copiado",
+      "description": "Novo Banco: 4 linhas de fevereiro de 2026 foram copiadas para março de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "0e0c5fcb-e28d-4d83-8218-93cd7b819821",
+      "timestamp": "2026-04-15T15:28:06.320Z",
+      "title": "Acompanhamento copiado",
+      "description": "Novo Banco: 5 linhas de janeiro de 2026 foram copiadas para fevereiro de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "98b528dd-18e8-4176-879d-fd36b1fad70e",
+      "timestamp": "2026-04-15T15:28:04.190Z",
+      "title": "Despesa recorrente apagada",
+      "description": "Novo Banco: Prestação Cozinha foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "c7edaf86-d124-4d18-ae00-89877e8ed206",
+      "timestamp": "2026-04-15T15:28:03.952Z",
+      "title": "Despesa recorrente apagada",
+      "description": "Novo Banco: Prestação Casa Alhadas foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "312fb3e4-275b-4225-ae96-8d3eb8ebfc69",
+      "timestamp": "2026-04-15T15:28:03.760Z",
+      "title": "Despesa recorrente apagada",
+      "description": "Novo Banco: Prestação Casa foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "13f81e38-fe59-4ce6-9966-7e0fe7d31a3d",
+      "timestamp": "2026-04-15T15:28:03.507Z",
+      "title": "Despesa recorrente apagada",
+      "description": "Novo Banco: Água foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "0fdf85c7-ed5b-40b4-a9f3-bb4c21c4c329",
+      "timestamp": "2026-04-15T15:28:03.151Z",
+      "title": "Despesa recorrente apagada",
+      "description": "Novo Banco: EDP foi removida de fevereiro de 2026."
+    },
+    {
+      "id": "b9769d89-92f3-444f-9512-b0c6272ce5ad",
+      "timestamp": "2026-04-15T15:24:08.611Z",
+      "title": "Acompanhamento copiado",
+      "description": "Novo Banco: 5 linhas de janeiro de 2026 foram copiadas para fevereiro de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "d3da61ba-3cae-42dd-a906-27036736b434",
+      "timestamp": "2026-04-15T15:23:39.332Z",
+      "title": "Entrada de acompanhamento criada",
+      "description": "Novo Banco: Água ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "258be07c-a85e-4e60-8865-0a88ccb48af8",
+      "timestamp": "2026-04-15T15:22:20.020Z",
+      "title": "Entrada de acompanhamento editada",
+      "description": "Novo Banco: Prestação Cozinha ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "29bcb88b-039a-4ed0-9b85-6a3fd5eec5a9",
+      "timestamp": "2026-04-15T15:22:12.377Z",
+      "title": "Entrada de acompanhamento editada",
+      "description": "Novo Banco: Prestação Casa ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "0401d2e7-1497-4f6d-948c-e281795ef645",
+      "timestamp": "2026-04-15T15:21:59.575Z",
+      "title": "Entrada de acompanhamento editada",
+      "description": "Novo Banco: Prestação Casa Alhadas ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "48645abe-2c08-47af-984a-7a5a8499e20e",
+      "timestamp": "2026-04-15T15:21:26.837Z",
+      "title": "Backup exportado",
+      "description": "Dados exportados com o ficheiro GestãofinanceiraNL-20260415-162126.json."
+    },
+    {
+      "id": "5e5fe66b-e7ad-4064-990d-a98630fced52",
+      "timestamp": "2026-04-15T15:09:24.654Z",
+      "title": "Entrada de acompanhamento criada",
+      "description": "Novo Banco: Pagamento Prestacao Ch Nº ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "91f83a68-5164-4931-ad10-ed3c72646ac0",
+      "timestamp": "2026-04-15T15:09:15.213Z",
+      "title": "Despesa recorrente criada",
+      "description": "Novo Banco: Pagamento Prestacao Ch Nº foi adicionado a janeiro de 2026."
+    },
+    {
+      "id": "3342c3e7-e9d7-41d0-a628-7e407c045325",
+      "timestamp": "2026-04-15T15:09:13.716Z",
+      "title": "Despesa recorrente criada",
+      "description": "Novo Banco: Pag. Prestacao Crd Pessoal foi adicionado a janeiro de 2026."
+    },
+    {
+      "id": "fc7c413f-bdff-4fe9-850c-a27cc7f83182",
+      "timestamp": "2026-04-15T15:08:48.458Z",
+      "title": "Entrada de acompanhamento editada",
+      "description": "Novo Banco: EDP ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "aaa332dd-6c27-46eb-81ef-4fe481391d27",
+      "timestamp": "2026-04-15T15:08:44.721Z",
+      "title": "Despesa recorrente criada",
+      "description": "Novo Banco: Cobranca Sdd Edp Comercial foi adicionado a janeiro de 2026."
+    },
+    {
+      "id": "9d9088c1-d7c9-43b8-9232-f67bd4190c55",
+      "timestamp": "2026-04-15T14:56:13.807Z",
+      "title": "Backup exportado",
+      "description": "Dados exportados com o ficheiro GestãofinanceiraNL-20260415-155613.json."
+    },
+    {
+      "id": "7c296c20-1191-4a4f-8718-590c49c64500",
+      "timestamp": "2026-04-15T14:54:28.480Z",
+      "title": "Acompanhamento copiado",
+      "description": "ActivoBank: 1 linhas de janeiro de 2026 foram copiadas para fevereiro de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "443f19ec-da28-4c64-87fc-1b8dc221cdba",
+      "timestamp": "2026-04-15T14:54:06.241Z",
+      "title": "Entrada de acompanhamento criada",
+      "description": "ActivoBank: Prio ficou configurado nos somatórios de janeiro de 2026."
+    },
+    {
+      "id": "c8589d39-687a-4a54-b808-ae14bc152598",
+      "timestamp": "2026-04-15T14:53:56.662Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Dd Paypal Europe 5vu22252ukl5n foi removida de janeiro de 2026."
+    },
+    {
+      "id": "0008887b-d3ee-46f2-975d-614437bf68cf",
+      "timestamp": "2026-04-15T14:53:55.054Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: E12d6dba-e418-4033-879c-feda5c3d57c3 foi removida de janeiro de 2026."
+    },
+    {
+      "id": "76367e9a-8cfa-49d9-a6de-c98d5d43cf54",
+      "timestamp": "2026-04-15T14:53:38.074Z",
+      "title": "Entrada de acompanhamento editada",
+      "description": "ActivoBank: Prio - Mobilidade Elétrica ficou configurado nos somatórios de abril de 2026."
+    },
+    {
+      "id": "8ea93978-775e-45b8-ad25-2ba2b859fee9",
+      "timestamp": "2026-04-15T14:53:31.778Z",
+      "title": "Entrada de acompanhamento editada",
+      "description": "ActivoBank: Prio - Mobilidade Elétricaa ficou configurado nos somatórios de abril de 2026."
+    },
+    {
+      "id": "df75020c-9f22-416d-857f-cc6056eea77d",
+      "timestamp": "2026-04-15T14:53:16.892Z",
+      "title": "Despesa recorrente criada",
+      "description": "ActivoBank: Dd Prio.e Mobilit Pt218856458a63 foi adicionado a abril de 2026."
+    },
+    {
+      "id": "3174af25-00e5-4e18-9e76-cb1c9e1ca35a",
+      "timestamp": "2026-04-15T14:52:58.737Z",
+      "title": "Acompanhamento copiado",
+      "description": "ActivoBank: 3 linhas de março de 2026 foram copiadas para abril de 2026 sem duplicar as existentes."
+    },
+    {
+      "id": "c4355f0c-e0dc-4f11-8e6e-ff8a9188d045",
+      "timestamp": "2026-04-15T14:52:56.480Z",
+      "title": "Despesa recorrente apagada",
+      "description": "ActivoBank: Dd Vodafone Portu 05107509668 foi removida de abril de 2026."
+    },
+    {
+      "id": "5e30067b-7c3c-4d19-8938-d7a49221d2a7",
+      "timestamp": "2026-04-15T14:52:55.019Z",
+      "title": "Ação desfeita",
+      "description": "ActivoBank: Dd Vodafone Portu 05107509668 foi reposta em abril de 2026."
+    }
+  ]
+}
